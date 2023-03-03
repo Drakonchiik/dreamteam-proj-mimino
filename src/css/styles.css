@@ -4,18 +4,78 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+/* IMPORT */
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./main-page/home-page-stiles.css');
+@import url('./restaurant-page/restaurant-stile.css');
+@import url('./hotel-page/hotel-stiles.css');
+@import url('./room-page/room-stiles.css');
+@import url('./footer.css');
+
+
+/* FONTS */
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria Regular'), local('Geometria-Regular'),
+      url('Geometria-Regular.woff2') format('woff2'),
+      url('Geometria-Regular.woff') format('woff'),
+      url('Geometria-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Regular'), local('DM-Sans-Regular'),
+      url('DMSans-Regular.woff2') format('woff2'),
+      url('DMSans-Regular.woff') format('woff'),
+      url('DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Medium'), local('DM-Sans-Medium'),
+      url('DMSans-Medium.woff2') format('woff2'),
+      url('DMSans-Medium.woff') format('woff'),
+      url('DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Bold'), local('DM-Sans-Bold'),
+      url('DMSans-Bold.woff2') format('woff2'),
+      url('DMSans-Bold.woff') format('woff'),
+      url('DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+/* BODY STILE */
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #121212;
+  background-color: #F7F7F7;
+}
+  
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 400;
+
+  color: #121212;
+  background-color: #F7F7F7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
