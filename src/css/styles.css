@@ -67,6 +67,14 @@ body {
   color: #121212;
   background-color: #F7F7F7;
 }
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
   
 :root {
   font-family: 'DM Sans', sans-serif;
