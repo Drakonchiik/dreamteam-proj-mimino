@@ -68,12 +68,28 @@ body {
   background-color: #F7F7F7;
 }
 
+/* 375px <= phone screen <= infinity */
 .container {
+  min-width: 320px;
   max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+/* 768px <= tablet screen <= infinity */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* 1158px <= desktop screen <= infinity */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
 }
   
 :root {
