@@ -111,12 +111,33 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 767px) {
+  .slider-img {
+    max-height: 429px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-img {
+    max-height: 548px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .slider-img {
+    max-height: 580px;
+  }
+}
 /* ------ */
 .slider-activities {
   margin-top: 24px;
   display: flex;
   gap: 32px;
   justify-content: flex-end;
+}
+@media screen and (min-width: 1440px) {
+  .slider-activities {
+    justify-content: start;
+  }
 }
 .slider-btn {
   width: 36px;
