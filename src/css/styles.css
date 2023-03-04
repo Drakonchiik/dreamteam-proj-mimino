@@ -19,9 +19,9 @@
 @font-face {
   font-family: 'Geometria';
   src: local('Geometria Regular'), local('Geometria-Regular'),
-      url('Geometria-Regular.woff2') format('woff2'),
-      url('Geometria-Regular.woff') format('woff'),
-      url('Geometria-Regular.ttf') format('truetype');
+      url('../css/fonts/Geometria-Regular.woff2') format('woff2'),
+      url('../css/fonts/Geometria-Regular.woff') format('woff'),
+      url('../css/fonts/Geometria-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -29,9 +29,9 @@
 @font-face {
   font-family: 'DM Sans';
   src: local('DM Sans Regular'), local('DM-Sans-Regular'),
-      url('DMSans-Regular.woff2') format('woff2'),
-      url('DMSans-Regular.woff') format('woff'),
-      url('DMSans-Regular.ttf') format('truetype');
+      url('../css/fonts/DMSans-Regular.woff2') format('woff2'),
+      url('../css/fonts/DMSans-Regular.woff') format('woff'),
+      url('../css/fonts/DMSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -39,9 +39,9 @@
 @font-face {
   font-family: 'DM Sans';
   src: local('DM Sans Medium'), local('DM-Sans-Medium'),
-      url('DMSans-Medium.woff2') format('woff2'),
-      url('DMSans-Medium.woff') format('woff'),
-      url('DMSans-Medium.ttf') format('truetype');
+      url('../css/fonts/DMSans-Medium.woff2') format('woff2'),
+      url('../css/fonts/DMSans-Medium.woff') format('woff'),
+      url('../css/fonts/DMSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: medium;
 }
@@ -49,9 +49,9 @@
 @font-face {
   font-family: 'DM Sans';
   src: local('DM Sans Bold'), local('DM-Sans-Bold'),
-      url('DMSans-Bold.woff2') format('woff2'),
-      url('DMSans-Bold.woff') format('woff'),
-      url('DMSans-Bold.ttf') format('truetype');
+      url('../css/fonts/DMSans-Bold.woff2') format('woff2'),
+      url('../css/fonts/DMSans-Bold.woff') format('woff'),
+      url('../css/fonts/DMSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: bold;
 }
@@ -68,7 +68,6 @@ body {
   background-color: #F7F7F7;
 }
 
-/* 375px <= phone screen <= infinity */
 .container {
   min-width: 320px;
   max-width: 375px;
@@ -91,7 +90,21 @@ body {
     max-width: 1440px;
   }
 }
-  
+
+/* 768px <= tablet screen <= infinity */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/* 1440px <= desktop screen <= infinity */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 :root {
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
