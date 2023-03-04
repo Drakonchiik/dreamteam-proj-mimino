@@ -1,0 +1,30 @@
+.welcome-section {
+  margin: 0 0 64px 0;
+  padding: 0;
+}
+
+.welcome-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  width: 335px;
+}
+
+.welcome-title-accent {
+  font-style: italic;
+}
+
+.welcome-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
