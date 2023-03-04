@@ -1,0 +1,238 @@
+.section {
+  background: #f7f7f7;
+}
+.restaurant-container.container {
+  max-width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .restaurant-container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant-container {
+    width: 768px;
+    margin: 0 auto;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inner-wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurant-container {
+    width: 1440px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .inner-wrapper {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurant-info {
+    padding-top: 204px;
+    margin-right: 181px;
+  }
+}
+
+.restaurant-hero-title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  /* identical to box height, or 100% */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #121212;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-hero-title {
+    font-size: 80px;
+  }
+}
+
+.restaurant-btn {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-btn {
+    margin-top: 32px;
+  }
+}
+
+.btn-activities {
+  display: inline-block;
+  padding: 8px 18px;
+
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  /* identical to box height, or 129% */
+
+  letter-spacing: -0.02;
+  background: transparent;
+
+  color: #121212;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-activities:hover,
+.btn-activities:focus,
+.btn-activities:active {
+  background-color: #121212;
+  color: #f7f7f7;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-activities {
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn-activities {
+    font-size: 18px;
+    line-height: 1.33;
+
+    /* identical to box height, or 133% */
+  }
+}
+
+.slider {
+  margin-top: 40px;
+  height: 580px;
+}
+@media screen and (max-width: 767px) {
+  .slider {
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    margin-top: 54px;
+    margin-right: -20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .slider {
+    margin-right: -50px;
+  }
+}
+
+.slider-img-container {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .slider-img-container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider-img-container {
+    gap: 32px;
+  }
+}
+
+.slider-img {
+  width: auto;
+  height: 580px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .slider-img {
+    width: 100%;
+  }
+}
+.slider-img.big {
+}
+/* @media screen and (min-width: 1440px) {
+  .slider-img {
+    position: relative;
+    top: 0;
+    right: -250px;
+  }
+} */
+
+.btn-slider-container {
+  margin-top: 24px;
+  display: flex;
+  gap: 32px;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .btn-slider-container {
+    margin-top: 40px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn-slider-container {
+    justify-content: flex-start;
+  }
+}
+.slider-activities {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background: transparent;
+  border: none;
+}
+.slider-activities:hover,
+.slider-activities:focus,
+.slider-activities:active {
+  opacity: 0.3;
+}
+
+.text-discription {
+  margin-top: 40px;
+  max-width: 338px;
+
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  /* or 129% */
+
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+
+  color: #121212;
+}
+@media screen and (max-width: 767px) {
+  .text-discription {
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-discription {
+  }
+}
