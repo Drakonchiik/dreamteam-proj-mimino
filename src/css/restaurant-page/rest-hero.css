@@ -87,6 +87,22 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .btn-activities {
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn-activities {
+    font-size: 18px;
+    line-height: 1.33;
+
+    /* identical to box height, or 133% */
+  }
+}
+
 .btn-activities:hover,
 .btn-activities:focus,
 .btn-activities:active {
@@ -134,6 +150,19 @@
   gap: 32px;
   justify-content: flex-end;
 }
+@media screen and (max-width: 767px) {
+  .slider-activities {
+    position: relative;
+    right: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .slider-activities {
+    position: relative;
+    right: 62px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .slider-activities {
     justify-content: start;
