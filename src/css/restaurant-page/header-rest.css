@@ -1,0 +1,6 @@
+/* top line nav */
+
+.nav-restaurant.carrent::after {
+    right: 45px;
+    background: #121212;
+}
