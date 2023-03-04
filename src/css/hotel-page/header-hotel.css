@@ -1,0 +1,57 @@
+/* top line nav */
+
+.header-white {
+    background: #FFFFFF;
+    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+
+.nav-home-black {
+    color: #121212;
+}
+
+.nav-hotel-black {
+    color: #121212;
+
+}
+
+.nav-hotel.carrent::after {
+    background: #121212;
+}
+
+.nav-restaurant-black {
+    color: #121212;
+}
+
+/* button burger menu */
+
+.menu-burger-black {
+       stroke: #121212;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-burger {
+        display: none;
+    }
+}
+
+/* header logo */
+
+.logo-header-black {
+    color: #121212;
+}
+
+
+.logo-item-black {
+    color: #121212;
+
+}
+
+
+/* header socials */
+
+@media screen and (min-width: 768px) {
+    .header-social-link-black {
+
+stroke: #121212;
+    }
+}
