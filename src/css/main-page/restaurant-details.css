@@ -1,0 +1,114 @@
+.rest-section {
+  position: absolute;
+  width: 335px;
+  height: 467px;
+  left: 20px;
+  top: 2738px;
+}
+
+.item {
+  padding-left: 20px;
+  width: 239px;
+  height: 40px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #121212;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text-descr {
+  margin-top: 24px;
+  padding-left: 20px;
+  width: 221px;
+  height: 54px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #121212;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pictures {
+  padding-left: 20px;
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 279px;
+  height: 34px;
+  left: 28px;
+  top: 433px;
+  border-radius: 32px;
+}
+.btn-book {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 18px;
+gap: 10px;
+text-align: center;
+width: 128px;
+height: 34px;
+
+border: 0.8px solid #121212;
+border-radius: 32px;
+
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.btn-view {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 18px;
+gap: 10px;
+text-align: center;
+width: 139px;
+height: 34px;
+
+border: 0.8px solid #121212;
+border-radius: 32px;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
