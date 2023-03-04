@@ -7,6 +7,11 @@
     <title>Room Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!--Modern normalize-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--Modern normalize-->
     <link
@@ -18,10 +23,195 @@
     <!-- load header -->
     <load src="partials/room-page/header-room.html" />
 
-    <!-- load section -->
-    <load src="partials/room-page/room-hero.html" />
-    <load src="partials/room-page/amenities.html" />
-
+    <!--Main-->
+    <main>
+      <section class="room-hero-section">
+          <div class="room-hero-container container">
+              <h1>Double Luxury Room</h1>
+              <button type="button">view prices</button>
+                <div class="picture-wrapper">
+                  <picture>
+                      <source media="(min-width: 1440px)"
+                          srcset="./img/room-page/desctop/hero/d-bedroom@1x.webp 1x,
+                              ./img/room-page/desctop/hero/d-bedroom@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <source media="(min-width: 768px)"
+                          srcset="./img/room-page/tablet/hero/t-bedroom@1x.webp 1x,
+                              ./img/room-page/tablet/hero/t-bedroom@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <source media="(max-width: 767.99px)"
+                          srcset="./img/room-page/mobile/hero/m-bedroom@1x.webp 1x,
+                              ./img/room-page/mobile/hero/m-bedroom@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <img class="img-hero"
+                          src="./img/room-page/mobile/hero/m-bedroom@1x.webp"
+                          alt="bathroom"
+                      >
+                  </picture>
+                                <picture>
+                      <source media="(min-width: 1440px)"
+                          srcset="./img/room-page/desctop/hero/436d-kitchen@1x.webp 1x,
+                              ./img/room-page/desctop/hero/436d-kitchen@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <source media="(min-width: 768px)"
+                          srcset="./img/room-page/tablet/hero/436t-kitchen@1x.webp 1x,
+                              ./img/room-page/tablet/hero/436t-kitchen@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <source media="(max-width: 767.99px)"
+                          srcset="./img/room-page/mobile/hero/250m-kitchen@1x.webp 1x,
+                              ./img/room-page/mobile/hero/250m-kitchen@2x.webp 2x"
+                          type="image/webp"
+                      >
+                      <img
+                          src="./img/room-page/mobile/hero/250m-kitchen@1x.webp"
+                          alt="kitchen"
+                          height="429"
+                      >
+                  </picture>
+                </div>
+                <div class="scroll-wrapper">
+                  <svg class="scroll-icon" width="36" height="36">
+                    <use href="./img/icons.svg#icon-left"></use>
+                  </svg>
+                  <svg class="scroll-icon" width="36" height="36">
+                    <use href="./img/icons.svg#icon-right"></use>
+                  </svg>
+                </div>
+              <p>The Mimino hotel features spacious and stylish double luxury rooms with modern amenities for a comfortable stay.</p>
+          </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>General Amenities and Facilities</h2>
+            <ul>
+              <li>
+                <ul>
+                  <li><h3 class="Amenities-list-titles">General Amenities & Facilities:</h3>
+                    <li>
+                      <ul class="list-style">
+                        <li>24-hour front desk service</li>
+                        <li>Daily housekeeping</li>
+                        <li>Free Wi-Fi throughout the hotel</li>
+                        <li>Elevator access</li>
+                        <li>Luggage storage</li>
+                        <li>Non-smoking rooms available</li>
+                        <li>Meeting rooms for business and events</li>
+                        <li>On-site parking (surcharge)</li>
+                        <li>Concierge services</li>
+                      </ul>
+                    </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><h3 class="Amenities-list-titles">Bathroom:</h3></li>
+                  <li>
+                    <ul class="list-style">
+                      <li>Private bathroom with shower</li>
+                      <li>Complimentary toiletries</li>
+                      <li>Hair dryer</li>
+                      <li>Fresh towels daily</li>
+                      <li>Deluxe bathrobes (in some room categories)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><h3 class="Amenities-list-titles">Bedroom:</h3></li>
+                    <li>
+                      <ul class="list-style">
+                        <li>Comfortable beds with high-quality linens</li>
+                        <li>Blackout curtains</li>
+                        <li>Climate control (air conditioning and heating)</li>
+                        <li>Safe for valuables</li>
+                        <li>Writing desk and chair</li>
+                        <li>Flat-screen TV with cable channels</li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><h3 class="Amenities-list-titles">Kitchen:</h3></li>
+                  <li>
+                    <ul class="list-style">
+                      <li>In-room kitchenette (in some room categories)</li>
+                      <li>Refrigerator</li>
+                      <li>Microwave</li>
+                      <li>Electric kettle</li>
+                      <li>Cooking utensils and cutlery</li>
+                      <li>Dining table and chairs</li>
+                    </ul>
+                   </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><h3 class="Amenities-list-titles">Media:</h3></li>
+                  <li>
+                    <ul class="list-style">
+                      <li>Flat-screen TV with cable channels</li>
+                      <li>High-speed Wi-Fi</li>
+                      <li>iPod docking station</li>
+                      <li>Speaker system</li>
+                      <li>Electrical outlets for charging devices.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="./img/room-page/desctop/amenities/d-bathroom4@1x.webp 1x,
+                ./img/room-page/desctop/amenities/d-bathroom4@2x.webp 2x"
+              type="image/webp"
+            >
+            <source media="(min-width: 768px)"
+              srcset="./img/room-page/tablet/amenities/t-bathroom4@1x.webp 1x,
+                ./img/room-page/tablet/amenities/t-bathroom4@2x.webp 2x"
+              type="image/webp"
+            >
+            <source media="(max-width: 767.99px)"
+              srcset="./img/room-page/mobile/amenities/m-bathroom4@1x.webp 1x,
+                ./img/room-page/mobile/amenities/m-bathroom4@2x.webp 2x"
+              type="image/webp"
+            >
+            <img
+              src="./img/room-page/mobile/amenities/m-bathroom4@1x.webp"
+              alt="bathroom-4"
+            >
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="./img/room-page/desctop/amenities/d-bathroom5@1x.webp 1x,
+                ./img/room-page/desctop/amenities/d-bathroom5@2x.webp 2x"
+              type="image/webp"
+            >
+            <source media="(min-width: 768px)"
+              srcset="./img/room-page/tablet/amenities/t-bathroom5@1x.webp 1x,
+                ./img/room-page/tablet/amenities/t-bathroom5@2x.webp 2x"
+              type="image/webp"
+            >
+            <source media="(max-width: 767.99px)"
+              srcset="./img/room-page/mobile/amenities/m-bathroom5@1x.webp 1x,
+                ./img/room-page/mobile/amenities/m-bathroom5@2x.webp 2x"
+              type="image/webp"
+            >
+            <img
+              src="./img/room-page/mobile/amenities/m-bathroom5@1x.webp"
+              alt="bathroom-5"
+            >
+          </picture>
+        <button type="button">book a room</button>
+    </div>
+</section>
+    </main>
     <!-- load footer -->
     <load src="partials/footer.html" />
   </body>
