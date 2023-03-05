@@ -1,0 +1,195 @@
+/* ------------ Restaurant Menu Mobile--------------- */
+
+.menu-container.container {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-color: #121212;
+    color: #F7F7F7;
+}
+
+.menu-title {
+    margin-bottom: 36px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-subtitle {
+    margin-bottom: 32px;
+
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.menu-list {
+
+}
+
+.meal-list-item-name {
+    padding-left: 21px;
+}
+
+.meal-list-item-name::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #F7F7F7;
+}
+
+.meal-list {
+    list-style: disc;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.meal-list-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 29px;
+}
+
+.meal-list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dish-desc {
+    margin-right: auto;
+}
+
+.weight-price {
+    text-align: right;
+    margin-left: auto;
+}
+
+.meal-list-item-name {
+    list-style: disc;
+    margin-bottom: 8px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.meal-list-item-desc {
+    margin-bottom: 8px;
+    max-width: 233px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    color: rgba(216, 215, 215, 0.5);
+}
+
+.meal-list-item-weight {
+    margin-bottom: 8px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #D8D7D7;
+}
+
+.meal-list-item-price {
+    margin-bottom: 26px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.slider-btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.booking-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    min-width: 140px;
+    height: 40px;
+    border: 0.8px solid #F6F6F6;
+    border-radius: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #F7F7F7;
+}
+
+.slider-left-btn,
+.slider-right-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.slider-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.slider-icon {
+    stroke: #F6F6F6;
+}
+
+@media screen and (max-width: 1439px) {
+    .snacks-list,
+    .salad-list,
+    .deserts-list,
+    .drinks-list {
+        display: none;
+    }
+}
+
+/* ------------ /Restaurant Menu Mobile--------------- */
