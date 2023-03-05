@@ -1,2 +1,53 @@
 /* About kitchen */
+.container {
+width: 100%;
+padding-top: 64px;
+padding-bottom: 64px;
+}
 
+
+.small-img {
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+ gap: 20px;
+ align-items: center;
+ width: 100%;
+}
+
+.text {
+display: block;
+}
+.description, .description-text {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #000000;
+}
+.description {
+ margin-top: 32px;
+}
+.description-text {
+margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+ .container {
+ padding-top: 80px;
+ padding-bottom: 80px;
+ }
+ 
+.img-list {
+display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
+}
+  
+.small-img {
+ display: block;
+}
+}
