@@ -85,7 +85,7 @@ body {
   }
 }
 /* 1440px <= desktop screen <= infinity */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
