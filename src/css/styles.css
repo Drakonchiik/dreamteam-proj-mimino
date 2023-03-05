@@ -56,16 +56,6 @@
   font-style: bold;
 }
 
-@font-face {
-  font-family: 'DM Sans';
-  src: local('DM Sans Italic'), local('DM-Sans-Italic'),
-      url('../css/fonts/DMSans-Italic.woff2') format('woff2'),
-      url('../css/fonts/DMSans-Italic.woff') format('woff'),
-      url('../css/fonts/DMSans-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
 
 /* BODY STILE */
 body {
@@ -91,12 +81,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
   }
 }
 /* 1440px <= desktop screen <= infinity */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1440px;
   }
