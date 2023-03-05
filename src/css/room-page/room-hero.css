@@ -1,0 +1,28 @@
+.room-hero-section{
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+
+.room-hero-container.container{
+    padding-right: 0;
+}
+
+.picture-wrapper{
+    display: flex;
+}
+
+.img-hero{
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .img-hero{
+        margin-right: 32px;
+    }
+}
+
+
+.scroll-icon{
+    fill: #fff;
+    stroke: black;
+}
