@@ -14,6 +14,7 @@
     padding: 0 32px;
   }
 }
+
 /* 1440px <= desktop screen <= infinity */
 @media screen and (min-width: 1440px) {
   .container {
@@ -153,6 +154,7 @@
     height: 32px;
   }
 }
+
 /* header logo */
 
 .header-logo {
@@ -162,15 +164,15 @@
   margin-left: 60px;
 }
 
-@media screen and (min-width: 375px){
-.header-logo {
- margin-left: 83px;
-}
+@media screen and (min-width: 375px) {
+  .header-logo {
+    margin-left: 83px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-logo {
-  margin-left: 246px;
+    margin-left: 246px;
   }
 }
 
@@ -293,7 +295,7 @@
     padding-top: 23px;
     padding-bottom: 23px;
     padding-left: 32px;
- 
+
   }
 }
 
@@ -402,7 +404,7 @@
   padding-top: 128px;
   padding-right: 20px;
   padding-left: 20px;
- 
+
 }
 
 @media screen and (min-width: 768px) {
@@ -481,6 +483,7 @@
 }
 
 .mobile-burger-social-link {
+  margin-top: auto;
   fill: none;
   stroke: #F6F6F6;
 
