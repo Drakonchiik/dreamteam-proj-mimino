@@ -1,10 +1,33 @@
 /* About kitchen */
-.container {
+/* .container {
 width: 100%;
 padding-top: 64px;
 padding-bottom: 64px;
 }
+ */
+ 
+ .container {
+         max-width: 375px;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-left: auto;
+         margin-right: auto;
+ }
 
+
+  @media screen and (min-width: 768px) {
+         .container {
+                 max-width: 768px;
+                 padding: 0 32px;
+         }
+ }
+
+ 
+  @media screen and (min-width: 1440px) {
+         .container {
+                 max-width: 1440px;
+         }
+ }
 
 .small-img {
  display: flex;
@@ -12,7 +35,7 @@ padding-bottom: 64px;
  margin-top: 20px;
  gap: 20px;
  align-items: center;
- width: 100%;
+
 }
 
 .text {
@@ -36,7 +59,7 @@ margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
- .container {
+ .section-kitchen {
  padding-top: 80px;
  padding-bottom: 80px;
  }
@@ -45,9 +68,16 @@ margin-top: 24px;
 display: flex;
 flex-direction: row-reverse;
 justify-content: flex-end;
+margin-top: 20px;
 }
-  
+ .img-large {
+        margin-top: 20px;
+        margin-left: 32px;
+ }
+
+
 .small-img {
- display: block;
+ display:flex;
+ flex-direction: column;
 }
 }
