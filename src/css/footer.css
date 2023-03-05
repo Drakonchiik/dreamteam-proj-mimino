@@ -80,6 +80,7 @@
    .footer-navigation{
         display: flex;
         gap: 32px;
+        margin-right: 370px;
     } 
 
     .footer-nav-link {
@@ -97,5 +98,9 @@ color: #121212;
 
 .logo-set{
   text-align: center;
+}
+
+.footer-social-set{
+     margin-left: auto;
 }
 }
