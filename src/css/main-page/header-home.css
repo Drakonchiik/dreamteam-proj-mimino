@@ -137,13 +137,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 32px;
-  min-height: 22px;
-  padding: 0;
+  width: 28px;
+  height: 28px;
+  padding: 25px 0;
   border: none;
   background: none;
   stroke: #F6F6F6;
 }
+
+@media screen and (min-width: 768px) {
+  .menu-burger {
+    width: 32px;
+    height: 32px;
+    padding: 23px 0;
+   
+  }
+}
+
+@media screen and (min-width: 768){
+.btn-burger-svg {
+width: 24px;
+height: 16px;
+  }
+}
+
 
 @media screen and (min-width: 1200px) {
   .menu-burger {
