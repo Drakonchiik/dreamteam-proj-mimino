@@ -1,8 +1,7 @@
 /* 375px <= phone screen <= infinity */
 .container {
   max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -470,6 +469,7 @@
 
 .mobile-burger-socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   margin-top: 426px;
   padding-left: 20px;
@@ -483,7 +483,6 @@
 }
 
 .mobile-burger-social-link {
-  margin-top: auto;
   fill: none;
   stroke: #F6F6F6;
 
