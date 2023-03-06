@@ -28,7 +28,7 @@
        stroke: #121212;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .menu-burger {
         display: none;
     }
@@ -55,3 +55,4 @@
 stroke: #121212;
     }
 }
+
