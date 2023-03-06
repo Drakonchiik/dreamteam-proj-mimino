@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .room-list-style{
+    margin-bottom: 100px;
+  }
+}
+
 .last-list.room-list-style{
     margin-bottom: 64px;
 }
