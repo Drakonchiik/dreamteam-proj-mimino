@@ -1,18 +1,27 @@
-.rest-section {
-  position: absolute;
-  width: 335px;
-  height: 467px;
-  left: 20px;
-  top: 2738px;
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+
 
 .item {
   padding-left: 20px;
   width: 239px;
   height: 40px;
 
-  font-family: 'DM Sans';
-  font-style: normal;
+ 
+  
   font-weight: 500;
   font-size: 40px;
   line-height: 40px;
@@ -20,7 +29,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-  color: #121212;
+  
 
   flex: none;
   order: 0;
@@ -30,22 +39,14 @@
 .text-descr {
   margin-top: 24px;
   padding-left: 20px;
-  width: 221px;
-  height: 54px;
-
-  font-family: 'DM Sans';
+ 
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  /* or 129% */
 
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
-  color: #121212;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;
@@ -60,6 +61,7 @@
 }
 
 .btn {
+  box-sizing: border-box;
   margin-top: 82px;
   display: flex;
   flex-direction: row;
@@ -68,47 +70,93 @@
   padding: 0px;
   gap: 12px;
 
-  width: 279px;
-  height: 34px;
   left: 28px;
   top: 433px;
   border-radius: 32px;
+  
+
+
+}
+
+.btn-book .btn-view{
+  display: inline-block;
+  padding: 8px 18px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+  text-transform: uppercase;
+ 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  
+  
+  letter-spacing: -0.02;
+  background: transparent;
+  color: #121212;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .btn-activities {
+    line-height: 1.71;
+    
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn-activities {
+    font-size: 18px;
+    line-height: 1.33;
+    
+  }
+}
+.btn-activities:hover,
+.btn-activities:focus,
+.btn-activities:active {
+  background-color: #121212;
+  color: #F7F7F7;
 }
 .btn-book {
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 8px 18px;
-gap: 10px;
-text-align: center;
-width: 128px;
-height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 18px;
+  gap: 10px;
+  text-align: center;
+  border-radius: 32px;
 
-border: 0.8px solid #121212;
-border-radius: 32px;
-
-
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  text-transform: uppercase;
+  border: 0.8px solid #121212;
 }
 
 .btn-view {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 8px 18px;
-gap: 10px;
-text-align: center;
-width: 139px;
-height: 34px;
+  display: flex;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-align: center;
+  border-radius: 32px;
+  text-transform: uppercase;
+  border: 0.8px solid #121212;
+}
 
-border: 0.8px solid #121212;
-border-radius: 32px;
+/**
+  |============================
+  | tablet
+  |============================
+*/
 
+@media screen and (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    line-height: 1.11;
+  }
+}
 
-flex: none;
-order: 1;
-flex-grow: 0;
+@media screen and (min-width: 768px) {
+  .item {
+    font-size: 68px;
+    margin-left: 32px;
+  }
 }
