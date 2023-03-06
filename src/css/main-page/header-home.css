@@ -227,6 +227,8 @@
 
 /* modal burger menu */
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -448,7 +450,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 426px;
+  margin-top: auto;
+  margin-bottom: 24px;
   padding-left: 20px;
 
 }
