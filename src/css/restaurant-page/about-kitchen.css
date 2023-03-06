@@ -129,7 +129,7 @@ padding-bottom: 100px;
 .small-img {
  display: flex;
 flex-direction: row;
-width: 100%;
+max-width: 100%;
 gap: 32px;
 margin-top: 0; 
 
@@ -154,13 +154,13 @@ font-weight: 500;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 }
-/* .img-pictures-one {
+.img-pictures-one {
 width: 334px;
 }
 .img-pictures {
 width: 467px;
-} */
-/* .img {
-max-width: 100%;
-} */
+} 
+ .img {
+max-width: 1440px;
+} 
  }
