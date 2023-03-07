@@ -160,8 +160,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1440px) {
         background-color: transparent;
     }
     .hero {
+        top: -80px;
+        position: relative;
+        background-size: 40% 100%;
         background-position-x: 100%;
         background-position-y: 0px;
+               
     }
     .hero-title {
         padding-top: 274px;
