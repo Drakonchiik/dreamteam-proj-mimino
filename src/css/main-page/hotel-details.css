@@ -89,6 +89,12 @@
     }
 }
 
+@media screen and (min-width:1440px){
+    .flex-hotel{
+        margin-top:44px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .bad-img {
         margin-bottom: 27px;
@@ -249,6 +255,7 @@
         width: 170px;
         height: 42px;
         font-size: 18px;
+        margin:0;
     }
 }
 
@@ -276,7 +283,7 @@
 @media screen and (min-width:1440px) {
     .button-modal {
         position: absolute;
-        left: 970px;
-        bottom: 652px;
+        top:1px;
+        left:1066px;
     }
 }
