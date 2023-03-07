@@ -155,11 +155,11 @@
 
 .select-icon {
   position: absolute;
-  right: 5px;
-  top: 7.5px;
+  right: 0;
+  top: -1px;
   z-index: -1;
-  fill: #FFFFFF;
-  stroke: #121212;
+  fill: transparent;
+  stroke: #ffffff;
 }
 
 .select-items div,
