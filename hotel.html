@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/dreamteam-proj-mimino/assets/swiper-62347874.js"></script>
-    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/swiper-af1461a1.css">
-    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/hotel-13379e0f.css">
+    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/swiper-d9d4efa9.css">
+    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/hotel-cded3d29.css">
   </head>
   <body>
     <!-- load header -->
@@ -105,7 +105,7 @@
   </head>
   <body>
     <main class="background">
-      <section class="sect-one-disp">
+      <section class="sect-one-disp container">
         <div class="sect-one-div-disp">
           <div>
             <h1 class="sect-one-h">hotel</h1>
@@ -124,44 +124,60 @@
             a romantic dinner, our menu has something for everyone.
           </p>
         </div>
-        <ul class="sect-one-img">
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/dreamteam-proj-mimino/assets/image-1ec65852.webp "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/dreamteam-proj-mimino/assets/image-tablet-e12b8c21.webp "
-              />
+        <div>
+          <ul class="sect-one-img">
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="/dreamteam-proj-mimino/assets/image-1ec65852.webp "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/dreamteam-proj-mimino/assets/image-tablet-e12b8c21.webp "
+                />
 
+                <img
+                  class="img-one-mobile1"
+                  src="/dreamteam-proj-mimino/assets/image-mobile-19330f02.webp"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="/dreamteam-proj-mimino/assets/image1-1de2977a.webp "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/dreamteam-proj-mimino/assets/image1-tablet-77fc4a20.webp "
+                />
+
+                <img
+                  class="img-one-mobile2"
+                  src="data:image/webp;base64,UklGRugFAABXRUJQVlA4INwFAABwJQCdASpVAK0BPpFIn0ulpCoiohM5kUASCWduvd6WJk8YspeQ3u7C/6fM37M8jLNB/eGTo9J/pednl6qGZPTfaGMZWwuBbo8ecNuoISJadmQI+/ljLRcyNuETWsMNqkJ++PbIaCsEmMoIb+W2PezIucnqIY1v/a7ouGnM5/+uuM2qXXuLDJq6+BF0ltOXfo9GOvFUhtfguQ/hffiAMSCr4VGMbXpc/BGr0kYMVKB6fZWcgwHkr/grN6FzImAhn0EL9V1aOhbH1BacSLLH1LkShlLD1REsb3xP99BD0tB1FVM41mESNVzVlr0RBQ1doK8WU7c+LP5dh88bm1dMJ3iCB/o0vQQfuzNp9+KAfNnRwr2gGHlEGexAR9Uv+wvDbtDDnjK4B3oW4fsOR/ZCfJmSfw6jJAD+Qz/yOwhutfJOLCVdYkrrqc0z7ExcrUw9wEdIKSP/Exu8W6apCVXAig8OyGjMYcDokxLl3jgmHcGvvQOQ3sJCmNs6lREEGCwS8d0s+u62VZt6H3NTB2tqQCvtYEnbNs7yJrCpxfdZQhs2yKn1wzJBt4O1fW0zoKzgn1bbUof5oX5wjmF4WYVLQts/6zsPTfgeu72f88w4P19TRnD5wSWjtwDZEhT913bzF5fDzP63kS2hXyYkWxAWwG+YuThcdI1WVTtYXa5o5G4A0JLlUaYXZXxaM2FjrTTsYBgiCBhjJ965XdgdBB4M+45y2SL2URsuc2/jdjfwFuMq40QE9I8yGc2OgLWdyjeS7k2xGGqriUdFhIhSCYXxGhotjPhS12RiU5jMQU9uLbgldjoP25rS8fhDT4asK0jxlDc5UyHp2mMuzijpP8VLTFpS4Qk8/2cumwfxv6MgH8GtfxUXVwttQoqfknwOObTL2k/bKsBhD+k9/ANjMFt8LyF2ksvU1R8Rni480jpvwuloJGDuB3h70NAFcajMNIRpt4/WMnnMCDKHig+o/4nQIFo3OTs/awdmEcTUdP7hCWo2UcajwCVpvFKVYy3t9Xt3Pv2oG8sjqxdQPmS+xhYcKSC07xQLS75ivYKx5V7Eid18/DIqUP/HY5uc8dpI5srz/xzoWGuVJ0DHpZZHR0MdGIWNO/9rwzJGfTnfSlBy1OPJBxyGqO6rPs9v9SwPstOGAQXU2bDgGzJTrh+suthcj4eGRj0lnfsxNtnQST6JRUue8OJqGJrzwjghAG41m/mzNC+1S1dvwbNJWohnK7fkvcRf3ZHawGdSnpdOxT41+BM34wkTRtsUqNHHlPop7x9rg40QtNpyaUFGDYi9FW6G58x4gjq76QvD65hpcSfDzLVPv1ytkqkCjZWarSAwJVlmr3DN01wLMaQCCrqCWPivtq1+5klpo0s2GikDZdOrNNIi2PoMUn7EbDhLoAQFP6g4docfrMS1d4ZVI4M2UglZh0HO/4RUyzo9wdwk2u2dP9d7Z81/giS9J3WJpDuKDp4SZPHi/5rV0nyUlLJTAWE7wxr6+btXVVrGKivDOLhY3CGuc+x6bDJjerB6BodPZv3aOyDVI2+c6bAHY+VHulpB2NBbhjnKrkh1fDzTUYAgcUJu9Wlbi8LlmNdXztJ2s60va1qNH+SR0iQzNne1AR1yanMtNQY8EMhbyfxNQvdRfZr3qULbJGcFXNwf5J52aGz7hKwuFxtM/pgKyK6wAiyH9/8R8/Uw5cyVqUYlrsZot9XfQgh5+iXqfVr3rWqYsn8cayC2ryZjr+DKTgBpmZOmmSz4vvfNeiCy2dmto0k23KUB7Jaft3XiY43B1I2KTkaarku0KHfZES8J5KRXMIuL5aylt0nSuhjDib3Bx8eyTWHkRSTlwYTLelcp8S6ddKgYEKQT39qqlfj5WIeitMnAAUVt1kkhhj//dYRqSrz2dLVr8jXIIRdlgOJpnF4LGaUcaDUpDG3GtXyLm7KQAO3WmDodJbyZVagWBDuKBlYu5mgNWY6AMrjRucSwAeJN4pQr9fxw5mJurS3xOIV3IAA="
+                  alt=""
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="sect-one-svg-disp">
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile1"
-                src="/dreamteam-proj-mimino/assets/image-mobile-19330f02.webp"
+                src="http://localhost:5173/img/rest-hero/arrow1.svg"
                 alt=""
               />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/dreamteam-proj-mimino/assets/image1-1de2977a.webp "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/dreamteam-proj-mimino/assets/image1-tablet-77fc4a20.webp "
-              />
-
+            </button>
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile2"
-                src="data:image/webp;base64,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"
+                src="http://localhost:5173/img/rest-hero/arrow2.svg"
                 alt=""
               />
-            </picture>
-          </li>
-        </ul>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="sect-two">
         <ul class="sect-two-img">
@@ -241,7 +257,9 @@
             </div>
           </div>
           <ul class="sect-two-butt-disp">
-            <li><button class="sect-two-butt" href="">More details</button></li>
+            <li class="sect-two-a-li">
+              <a class="sect-two-a" href="">More details</a>
+            </li>
             <li><button class="sect-two-butt" href="">View prices</button></li>
           </ul>
         </div>
@@ -322,8 +340,8 @@
             </div>
           </div>
           <ul class="sect-tree-butt-disp">
-            <li>
-              <button class="sect-tree-butt" href="">More details</button>
+            <li class="sect-tree-a-li">
+              <a class="sect-tree-a" href="">More details</a>
             </li>
             <li><button class="sect-tree-butt" href="">View prices</button></li>
           </ul>
@@ -402,8 +420,8 @@
             </p>
           </div>
           <ul class="sect-four-butt-disp">
-            <li>
-              <button class="sect-four-butt" href="">More details</button>
+            <li class="sect-four-a-li">
+              <a class="sect-four-a" href="">More details</a>
             </li>
             <li><button class="sect-four-butt" href="">View prices</button></li>
           </ul>
