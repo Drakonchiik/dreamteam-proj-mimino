@@ -58,14 +58,20 @@
 
 @media screen and (min-width:1440px) {
     .title-location {
-        position: absolute;
-        left: 885px;
+       margin-left: 32px;
+
     }
 
     .flex-location {
         display: flex;
         align-items: flex-end;
-        justify-content: center;
+        justify-content: normal;
+        margin-left: 64px;
+    }
+
+    .position{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
@@ -102,7 +108,7 @@
     }
 
     .main-adress {
-        margin-left: 32px;
+        margin-left: -328px;
     }
 }
 
@@ -148,6 +154,8 @@
 
 @media screen and (min-width:1440px) {
     .main-location {
+        display: flex;
+        flex-direction: row;
         margin-left: 70px;
     }
 }
@@ -160,6 +168,11 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
+@media screen and (min-width:1440px) {
+   .call{
+    margin-right: 12px;
+   }
+}
 
 .number {
     font-weight: 400;
@@ -170,6 +183,7 @@
 
 @media screen and (min-width:768px) {
     .number {
+        display: block;
         gap: 2px;
     }
 }
