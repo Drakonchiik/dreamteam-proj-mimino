@@ -143,6 +143,20 @@
     padding: 8px 40px;
     margin-right: auto;
     margin-left: auto;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: background-color, color, box-shadow;
+}
+
+.amenities-btn:hover,
+.amenities-btn:focus{
+    color: #121212;
+    background-color: #ffffff;
+}
+
+.amenities-btn:active{
+    box-shadow: -14px 24px 68px -16px rgba(255, 255, 255, 0.15);
 }
 
 @media screen and (min-width: 768px) {
