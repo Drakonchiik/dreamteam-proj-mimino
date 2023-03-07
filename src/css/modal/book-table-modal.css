@@ -45,6 +45,11 @@
   opacity: 0;
 }
 
+.btn-bodal-close {
+  fill: #121212;
+  stroke: #FFFFFF;
+}
+
 .modal-button-close {
   display: flex;
   justify-content: center;
@@ -53,8 +58,6 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  width: 28px;
-  height: 28px;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -155,6 +158,8 @@
   right: 5px;
   top: 7.5px;
   z-index: -1;
+  fill: #FFFFFF;
+  stroke: #121212;
 }
 
 .select-items div,

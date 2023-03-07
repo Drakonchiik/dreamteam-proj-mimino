@@ -1,3 +1,6 @@
 import './js/mobile-menu'
-import './js/modal'
+import './js/modal-modal'
+import './js/book-table/custom-date'
+import './js/book-table/custom-select'
+import './js/book-table/mask-phone'
 import './js/swiper'
