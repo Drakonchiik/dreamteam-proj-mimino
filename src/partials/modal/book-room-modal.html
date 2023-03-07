@@ -1,0 +1,115 @@
+<!-- modal book a room -->
+
+<div class="backdrop is-hidden" data-modal>
+      <div class="modal-room">
+         <button class="close-modal-book" type="button" data-modal-close>
+            <svg class="close" width="28" height="28">
+                <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+        </button>
+        <h2 class="modal-room-title">BOOK <span class="text-accent">A room</span></h2>
+
+        <form class="form-modal-book" name="form-modal-book">
+            <div class="form-field-book">
+                <label class="form-label-book">
+                    <input class="form-input-book" type="text" name="user_name" placeholder="Your name" required>Who should book a table for?
+                </label>
+            </div>
+
+            <div class="form-field-book">
+                <label class="form-label-book">
+                    <input class="form-input-book" type="tel" name="user_phone" placeholder="+38 ()"
+                  id="phone"
+                  required>Phone number
+                </label>
+            </div>
+
+            <div class="form-field-book">
+                <input
+                  id="arrival-date"
+                  class="calendar"
+                  type="text"
+                  name="upload-date"
+                  placeholder="today"
+                  ,
+                  autocomplete="off"
+                />
+                <svg class="select-icon" width="12" height="8">
+                  <use href="./images/icons.svg#select"></use>
+                </svg>
+                <label class="form-label-book label-date"
+                  >Check-in date</label>
+              </div>
+
+            <div class="form-field-book">
+                <input
+                  id="departure-date"
+                  class="calendar"
+                  type="date"
+                  name="release"
+                  placeholder="25/04/2023"
+                  ,
+                  autocomplete="off"/>
+                <svg class="select-icon" width="12" height="8">
+                  <use href="./images/icons.svg#select"></use>
+                </svg>
+                <label class="form-label-book label-date"
+                  >Check-in date</label>
+              </div>
+
+
+              <div class="book-number-select" style="width: 100%">
+                <select>
+                  <option value="0" selected>Double suite</option>
+                  <option value="1">Double junior suite</option>
+                  <option value="2">double standard</option>
+                  <option value="3">double economy</option>
+                  <option value="4">triple suite</option>
+                  <option value="5">triple junior suite</option>
+                  <option value="6">triple standard</option>
+                  <option value="7">triple economy</option>
+                </select>
+                <svg class="select-icon" width="12" height="8">
+                  <use href="./images/icons.svg#select"></use>
+                </svg>
+                <label class="form-label-book"
+                  >Number category</label>
+              </div>
+
+        <button class="mod-room-btn" type="submit">
+                MAKE A RESERVATION
+              </button>
+
+        </form>
+      </div>
+    </div>
+
+
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+<script src="./js/modal.js"></script>
+      <script src="./js/custom-select.js"></script>
+      <script src="./js/custom-date.js"></script>
+      <script src="./js/mask-phone.js"></script>
