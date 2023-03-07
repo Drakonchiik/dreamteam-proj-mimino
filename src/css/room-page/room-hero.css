@@ -92,19 +92,19 @@
 .room-hero-picture{
     display: flex;
     margin-bottom: 24px;
-    width: 375px;
+    /* width: 375px; */
 }
 
 @media screen and (min-width: 768px) {
     .room-hero-picture{
-        width: 768px;
+        /* width: 768px; */
         margin-bottom: 40px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .room-hero-picture{
-        width: 704px;
+        /* width: 704px; */
         margin-bottom: 16px;
     }
 }
