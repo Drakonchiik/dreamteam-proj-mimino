@@ -32,12 +32,16 @@
     text-transform: uppercase;
 }
 
-.menu-list {
-
-}
-
 .meal-list-item-name {
     padding-left: 21px;
+    margin-bottom: 8px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 .meal-list-item-name::before {
@@ -53,7 +57,8 @@
 }
 
 .meal-list {
-    list-style: disc;
+    margin-bottom: 46px;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -78,6 +83,7 @@
     width: 100%;
     height: 1px;
     background: rgba(255, 255, 255, 0.5);
+    opacity: 0.2;
 }
 
 .dish-desc {
@@ -87,18 +93,6 @@
 .weight-price {
     text-align: right;
     margin-left: auto;
-}
-
-.meal-list-item-name {
-    list-style: disc;
-    margin-bottom: 8px;
-
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
 }
 
 .meal-list-item-desc {
@@ -145,26 +139,6 @@
     margin-bottom: 40px;
 }
 
-.booking-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px 24px;
-    min-width: 140px;
-    height: 40px;
-    border: 0.8px solid #F6F6F6;
-    border-radius: 32px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: #F7F7F7;
-}
-
 .slider-left-btn,
 .slider-right-btn {
     width: 24px;
@@ -183,6 +157,26 @@
     stroke: #F6F6F6;
 }
 
+.booking-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    min-width: 140px;
+    height: 40px;
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #F7F7F7;
+}
+
 @media screen and (max-width: 1439px) {
     .snacks-list,
     .salad-list,
@@ -193,3 +187,145 @@
 }
 
 /* ------------ /Restaurant Menu Mobile--------------- */
+
+/* ------------ Restaurant Menu Tablet --------------- */
+
+@media screen and (min-width: 768px) {
+
+    .menu-container.container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+
+    .menu-title {
+        padding-left: 85px;
+        padding-right: 85px;
+        margin-bottom: 64px;
+
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .menu-subtitle {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .meal-list-item-name {
+        padding-left: 26px;
+
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .meal-list-item-name::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 11px;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #F7F7F7;
+    }
+
+    .meal-list-item-desc {
+        max-width: 345px;
+
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .meal-list-item-weight {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .meal-list-item-price {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .slider-btn-list {
+        gap: 32px;
+    }
+
+    .slider-left-btn,
+    .slider-right-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .slider-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .booking-btn {
+        display: inline-block;
+    }
+
+}
+
+/* ------------ /Restaurant Menu Tablet --------------- */
+
+/* ------------ Restaurant Menu Desktop --------------- */
+
+@media screen and (min-width: 1440px) {
+    .menu-container.container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 168px;
+        padding-right: 168px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 74px;
+    }
+
+    .deserts-drinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hot-list,
+    .snacks-list,
+    .salad-list,
+    .deserts-drinks {
+        width: 515px;
+    }
+
+    .slider-btn-list {
+        display: none;
+    }
+
+    .deserts-drinks .meal-list-item {
+        margin-bottom: 3px;
+    }
+
+    .deserts-drinks .meal-list-item::after {
+        bottom: 7px;
+    }
+
+    .booking-btn {
+        padding: 9px 24px;
+        min-width: 167px;
+        height: 42px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+}
+
+/* ------------ /Restaurant Menu Desktop --------------- */
+
