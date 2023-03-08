@@ -1,23 +1,27 @@
 /* modal book a room */
 
-.backdrop {
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  background-color: #00000080;
+  z-index: 20;
+  transition: 0.3s all;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  /* visibility: hidden; */
-  pointer-events: none;
-}
-
-.modal-room {
-  z-index: 10;
-  position: absolute;
+.modal {
+  z-index: 30;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -40,108 +44,107 @@
   opacity: 1;
 }
 
-  .modal-room-title{
-    display: block;
-    font-family: sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 38px;
-letter-spacing: -0.02em;
-text-transform: uppercase;
+.modal-room-title {
+  display: block;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 
-margin-bottom: 40px;
+  margin-bottom: 40px;
 
-color: #F7F7F7;
-  }
+  color: #f7f7f7;
+}
 
-  .text-accent{
-    font-style: italic;
-  }
+.text-accent {
+  font-style: italic;
+}
 
-  .close-modal-book{
-position: absolute;
-top: 14px;
+.close-modal-book {
+  position: absolute;
+  top: 14px;
   right: 14px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px;
-  
+
   width: 28px;
   height: 28px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  fill: #F7F7F7;
+  fill: #f7f7f7;
 }
 
-.form-modal-book{
+.form-modal-book {
   width: 100%;
 }
-  .form-field-book{
-    position: relative;
-    display: block;
-    margin-bottom: 32px;
-    font-size: 8px;
+.form-field-book {
+  position: relative;
+  display: block;
+  margin-bottom: 32px;
+  font-size: 8px;
 
-    line-height: 1.5;
-    letter-spacing: 0.18em;
-    color: #d8d7d7;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-  }
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #d8d7d7;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
 
-  .form-label-book{
-    font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 8px;
-line-height: 12px;
+.form-label-book {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
 
-letter-spacing: 0.18em;
-text-transform: uppercase;
-margin-bottom: 32px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 
-color: #D8D7D7;
-  }
+  color: #d8d7d7;
+}
 
-  .form-input-book{
-display: block;
-width: 100%;
-height: 36px;
-margin-bottom: 8px;
-padding-bottom: 18px;
-background-color: transparent;
-border: none;
-border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
-color: #F7F7F7;
-  }
+.form-input-book {
+  display: block;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+  color: #f7f7f7;
+}
 
-  .form-input-book::placeholder{
-    font-family: sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
+.form-input-book::placeholder {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
 
-letter-spacing: -0.02em;
-text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 
-color: #F7F7F7;
-opacity: 1;
-  }
+  color: #f7f7f7;
+  opacity: 1;
+}
 
-  /* .form-input-book::placeholder {
+/* .form-input-book::placeholder {
   opacity: 0;
 } */
-.form-field-tel{
+.form-field-tel {
   margin-bottom: 0;
 }
 
-* room-custom-select *
-.room-custom-select {
+* room-custom-select * .room-custom-select {
   position: relative;
   margin-bottom: 40px;
   width: 100%;
@@ -151,29 +154,29 @@ opacity: 1;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #F6F6F6;
-  
-height: 56px;
-background-color: transparent;
-border: none;
+  color: #f6f6f6;
+
+  height: 56px;
+  background-color: transparent;
+  border: none;
 }
 
-.select-room{
+.select-room {
   font-family: 'DM Sans';
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
 
-letter-spacing: -0.02em;
-text-transform: uppercase;
-  color: #F7F7F7;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
   background-color: #121212;
   border: none;
-  
+
   border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
-width: 98%;
-margin-bottom: 8px;
-padding-bottom: 18px;
+  width: 98%;
+  margin-bottom: 8px;
+  padding-bottom: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -216,36 +219,36 @@ padding-bottom: 18px;
   display: none;
 }
 .select-items div {
-  border: 1px solid #F6F6F6;
+  border: 1px solid #f6f6f6;
   background-color: #ccc;
   color: #121212;
 }
 .select-items div:hover,
 .same-as-selected {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .select-items {
-    position: absolute;
-    background-color: #121212;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    max-height: 150px;
-    overflow-y: auto;
+  position: absolute;
+  background-color: #121212;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  max-height: 150px;
+  overflow-y: auto;
 }
 .select-hide {
   display: none;
 }
 .select-items div {
-  border: 1px solid #F6F6F6;
+  border: 1px solid #f6f6f6;
   background-color: #ccc;
   color: #121212;
 }
 .select-items div:hover,
 .same-as-selected {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 input#room-custom-date,
@@ -256,7 +259,6 @@ label {
 .room-custom-date {
   position: relative;
   margin-bottom: 32px;
-  
 }
 .label-date {
   position: relative;
@@ -268,7 +270,7 @@ input#room-custom-date {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #f7f7f7;
   background-color: transparent;
   border: none;
   border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
@@ -280,11 +282,11 @@ input#room-custom-date::placeholder {
   position: absolute;
   top: 0;
   left: 0;
- 
+
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #f7f7f7;
   opacity: 1;
 }
 input#room-custom-date:focus::placeholder {
@@ -294,7 +296,6 @@ input#room-custom-date:focus::placeholder {
   left: 50px;
   color: #121212;
 }
-
 
 input.calendar {
   background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
@@ -306,7 +307,7 @@ input.calendar {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F7F7F7;
+  color: #f7f7f7;
 
   line-height: 18px;
   letter-spacing: -0.02em;
@@ -315,24 +316,24 @@ input.calendar {
   padding: 14px 48px;
   margin-right: auto;
   margin-left: auto;
-  border: 0.8px solid #F7F7F7;
+  border: 0.8px solid #f7f7f7;
   border-radius: 32px;
 }
 .mod-room-btn:hover,
 .mod-room-btn:focus {
   color: #121212;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 @media screen and (min-width: 768px) {
+  .close-modal-book {
+    width: 32px;
+    height: 32px;
+    top: 24px;
+    right: 24px;
+  }
 
-  .close-modal-book{
-  width: 32px;
-  height: 32px;
-top: 24px;
-  right: 24px;}
-
-  .modal-room {
+  .modal {
     padding-top: 32px;
     padding-bottom: 60px;
     padding-left: 32px;
@@ -341,27 +342,26 @@ top: 24px;
     min-height: 572px;
   }
 
-  .form-modal-book{
-display: flex;
+  .form-modal-book {
+    display: flex;
     flex-wrap: wrap;
     gap: 32px;
   }
-  .form-field-book{
+  .form-field-book {
     width: 266px;
   }
   .mod-room-btn {
     height: 52px;
-  padding-left: 133px;
-  padding-right: 133px;
-  line-height: 24px;
-}
+    padding-left: 133px;
+    padding-right: 133px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-   .mod-room-btn {
+  .mod-room-btn {
     font-size: 18px;
-  padding-left: 133px;
-  padding-right: 134px;
- 
-}
+    padding-left: 133px;
+    padding-right: 134px;
+  }
 }

@@ -1,8 +1,7 @@
 <!-- modal book a room -->
 
-<div class="backdrop is-hidden" data-modal>
-      <div class="modal-room">
-         <button class="close-modal-book" type="button" data-modal-close>
+      <div class="modal" data-modal="3">
+         <button class="close-modal-book js-modal-close" type="button" data-modal-close>
             <svg class="close" width="28" height="28">
                 <use href="./images/icons.svg#icon-x"></use>
             </svg>
@@ -82,7 +81,10 @@
 
         </form>
       </div>
-    </div>
+    
+
+
+    <div class="overlay js-overlay-modal" data-modal></div>
 
 
     <script
