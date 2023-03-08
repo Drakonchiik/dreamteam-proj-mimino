@@ -4,7 +4,7 @@ $(document).ready(() => {
 20; 02
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("table-custom-select");
+x = document.getElementsByClassName("book-number-select");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];

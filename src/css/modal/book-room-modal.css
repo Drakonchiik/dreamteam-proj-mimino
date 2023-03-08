@@ -10,7 +10,7 @@
 }
 
 .backdrop.is-hidden {
-  /* opacity: 0; */
+  opacity: 0;
   /* visibility: hidden; */
   pointer-events: none;
 }
@@ -102,6 +102,7 @@ line-height: 12px;
 
 letter-spacing: 0.18em;
 text-transform: uppercase;
+margin-bottom: 32px;
 
 color: #D8D7D7;
   }
@@ -115,6 +116,7 @@ padding-bottom: 18px;
 background-color: transparent;
 border: none;
 border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+color: #F7F7F7;
   }
 
   .form-input-book::placeholder{
@@ -131,44 +133,60 @@ color: #F7F7F7;
 opacity: 1;
   }
 
-  .form-input-book::placeholder {
+  /* .form-input-book::placeholder {
   opacity: 0;
-}
+} */
 .form-field-tel{
   margin-bottom: 0;
 }
 
-.book-number-select{
-   position: relative;
-  margin-bottom: 32px;
+* room-custom-select *
+.room-custom-select {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #F6F6F6;
+  
+height: 56px;
+background-color: transparent;
+border: none;
 }
 
-.book-number-select select {
-  display: none;
+.select-room{
+  font-family: 'DM Sans';
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+  color: #F7F7F7;
+  background-color: #121212;
+  border: none;
+  
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+width: 98%;
+margin-bottom: 8px;
+padding-bottom: 18px;
 }
-.select-selected {
-  padding: 0 0 18px;
-    border: none;
-    outline: none;
-    border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
-  background-color: transparent;
+
+@media screen and (min-width: 768px) {
+  .room-custom-select {
+    margin-bottom: 0;
+  }
 }
+
 .select-icon {
   position: absolute;
   right: 5px;
   top: 7.5px;
-  z-index: -1;
-  fill: #F7F7F7;
 }
-
-.select-hide {
-    display: none;
-}
-
 .select-items div,
 .select-selected {
   border: none;
@@ -176,7 +194,36 @@ opacity: 1;
   cursor: pointer;
   user-select: none;
 }
-
+.select-selected {
+  opacity: 0;
+  background-color: transparent;
+  padding: 0 0 18px;
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+}
+.select-items {
+  position: absolute;
+  background-color: #121212;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.select-hide {
+  display: none;
+}
+.select-items div {
+  border: 1px solid #F6F6F6;
+  background-color: #ccc;
+  color: #121212;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: #F6F6F6;
+}
 
 .select-items {
     position: absolute;
@@ -209,13 +256,14 @@ label {
 .room-custom-date {
   position: relative;
   margin-bottom: 32px;
+  
 }
 .label-date {
   position: relative;
   height: 100%;
   margin: 8px 0 0 0;
 }
-input#aroom-custom-date {
+input#room-custom-date {
   width: 100%;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -246,6 +294,8 @@ input#room-custom-date:focus::placeholder {
   left: 50px;
   color: #121212;
 }
+
+
 input.calendar {
   background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
   background-repeat: no-repeat;
@@ -277,27 +327,33 @@ input.calendar {
 @media screen and (min-width: 768px) {
 
   .close-modal-book{
-  
-  width: 28px;
-  height: 28px;}
+  width: 32px;
+  height: 32px;
+top: 24px;
+  right: 24px;}
 
   .modal-room {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-
     padding-top: 32px;
     padding-bottom: 60px;
     padding-left: 32px;
     padding-right: 32px;
-    width: 628px;
+    min-width: 628px;
     min-height: 572px;
   }
 
+  .form-modal-book{
+display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .form-field-book{
+    width: 266px;
+  }
   .mod-room-btn {
     height: 52px;
   padding-left: 133px;
   padding-right: 133px;
+  line-height: 24px;
 }
 }
 
@@ -306,5 +362,6 @@ input.calendar {
     font-size: 18px;
   padding-left: 133px;
   padding-right: 134px;
+ 
 }
 }
