@@ -15,11 +15,6 @@
   pointer-events: none;
 } */
 
-.modal.active, .overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -31,6 +26,12 @@
   background-color: #00000080;
   z-index: 20;
   transition: .3s all;
+}
+
+.modal.active, .overlay.active {
+  opacity: 1;
+  visibility: visible;
+  /* pointer-events: none; */
 }
 
 .modal {
