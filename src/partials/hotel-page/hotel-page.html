@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="background">
-      <section class="sect-one-disp">
+      <section class="sect-one-disp container">
         <div class="sect-one-div-disp">
           <div>
             <h1 class="sect-one-h">hotel</h1>
@@ -29,44 +29,60 @@
             a romantic dinner, our menu has something for everyone.
           </p>
         </div>
-        <ul class="sect-one-img">
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="./img/hotel-img/sect1/image.webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="./img/hotel-img/sect1/image-tablet.webp"
-              />
+        <div>
+          <ul class="sect-one-img">
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/hotel-img/sect1/image.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/hotel-img/sect1/image-tablet.webp"
+                />
 
+                <img
+                  class="img-one-mobile1"
+                  src="./img/hotel-img/sect1/image-mobile.webp"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/hotel-img/sect1/image1.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/hotel-img/sect1/image1-tablet.webp"
+                />
+
+                <img
+                  class="img-one-mobile2"
+                  src="./img/hotel-img/sect1/image1-mobile.webp"
+                  alt=""
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="sect-one-svg-disp">
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile1"
-                src="./img/hotel-img/sect1/image-mobile.webp"
+                src="http://localhost:5173/img/rest-hero/arrow1.svg"
                 alt=""
               />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="./img/hotel-img/sect1/image1.webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="./img/hotel-img/sect1/image1-tablet.webp"
-              />
-
+            </button>
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile2"
-                src="./img/hotel-img/sect1/image1-mobile.webp"
+                src="http://localhost:5173/img/rest-hero/arrow2.svg"
                 alt=""
               />
-            </picture>
-          </li>
-        </ul>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="sect-two">
         <ul class="sect-two-img">
@@ -146,7 +162,9 @@
             </div>
           </div>
           <ul class="sect-two-butt-disp">
-            <li><button class="sect-two-butt" href="">More details</button></li>
+            <li class="sect-two-a-li">
+              <a class="sect-two-a" href="./room-page.html">More details</a>
+            </li>
             <li><button class="sect-two-butt" href="">View prices</button></li>
           </ul>
         </div>
@@ -227,8 +245,8 @@
             </div>
           </div>
           <ul class="sect-tree-butt-disp">
-            <li>
-              <button class="sect-tree-butt" href="">More details</button>
+            <li class="sect-tree-a-li">
+              <a class="sect-tree-a" href="./room-page.html">More details</a>
             </li>
             <li><button class="sect-tree-butt" href="">View prices</button></li>
           </ul>
@@ -307,8 +325,8 @@
             </p>
           </div>
           <ul class="sect-four-butt-disp">
-            <li>
-              <button class="sect-four-butt" href="">More details</button>
+            <li class="sect-four-a-li">
+              <a class="sect-four-a" href="./room-page.html">More details</a>
             </li>
             <li><button class="sect-four-butt" href="">View prices</button></li>
           </ul>
