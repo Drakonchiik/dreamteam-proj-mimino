@@ -169,8 +169,8 @@
   }
 }
 .slider-btn {
-  width: 36px;
-  height: 36px;
+  fill: transparent;
+  stroke: #121212;
   display: inline-block;
   background: transparent;
   border: none;
