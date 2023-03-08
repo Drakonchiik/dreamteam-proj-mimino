@@ -1,5 +1,5 @@
 import './js/mobile-menu'
-import './js/modal-modal'
+import './js/modal'
 import './js/book-table/custom-date'
 import './js/book-table/custom-select'
 import './js/book-table/mask-phone'
