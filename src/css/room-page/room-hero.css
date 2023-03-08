@@ -91,31 +91,20 @@
 
 .room-hero-picture{
     display: flex;
+    gap: 24px;
     margin-bottom: 24px;
-    /* width: 375px; */
 }
 
 @media screen and (min-width: 768px) {
     .room-hero-picture{
-        /* width: 768px; */
         margin-bottom: 40px;
+        gap: 32px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .room-hero-picture{
-        /* width: 704px; */
         margin-bottom: 16px;
-    }
-}
-
-.img-room-hero{
-    margin-right: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .img-room-hero{
-        margin-right: 32px;
     }
 }
 
