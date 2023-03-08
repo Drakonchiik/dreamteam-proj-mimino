@@ -81,7 +81,7 @@ body {
 
 /* 375px <= phone screen <= infinity */
 .container {
-  max-width: 100%;
+  max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
