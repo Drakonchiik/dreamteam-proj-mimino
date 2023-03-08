@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.5);
+  transition: opacity var(--anim-fast), visibility var(--anim-fast);
 }
 
 .backdrop.is-hidden {
@@ -18,7 +18,10 @@
 .modal-room {
   z-index: 10;
   position: absolute;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   max-width: 335px;
   min-width: 320px;
   min-height: 636px;
@@ -27,14 +30,10 @@
   padding-left: 24px;
   padding-bottom: 40px;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
   background-color: #121212;
   border-radius: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+  transition: transform var(--anim-fast), opacity var(--anim-fast);
 }
 
 .backdrop.is-hidden .modal-room {
@@ -85,6 +84,13 @@ top: 14px;
     position: relative;
     display: block;
     margin-bottom: 32px;
+    font-size: 8px;
+
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    color: #d8d7d7;
+    text-transform: uppercase;
+    margin-bottom: 32px;
   }
 
   .form-label-book{
@@ -105,6 +111,7 @@ display: block;
 width: 100%;
 height: 36px;
 margin-bottom: 8px;
+padding-bottom: 18px;
 background-color: transparent;
 border: none;
 border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
@@ -127,6 +134,9 @@ opacity: 1;
   .form-input-book::placeholder {
   opacity: 0;
 }
+.form-field-tel{
+  margin-bottom: 0;
+}
 
 .book-number-select{
    position: relative;
@@ -141,6 +151,10 @@ opacity: 1;
   display: none;
 }
 .select-selected {
+  padding: 0 0 18px;
+    border: none;
+    outline: none;
+    border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
   background-color: transparent;
 }
 .select-icon {
@@ -151,6 +165,10 @@ opacity: 1;
   fill: #F7F7F7;
 }
 
+.select-hide {
+    display: none;
+}
+
 .select-items div,
 .select-selected {
   border: none;
@@ -158,20 +176,17 @@ opacity: 1;
   cursor: pointer;
   user-select: none;
 }
-.select-selected {
-  padding: 0 0 18px;
-  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
-}
+
 
 .select-items {
-  position: absolute;
-  background-color: #121212;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  max-height: 150px;
-  overflow-y: auto;
+    position: absolute;
+    background-color: #121212;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    max-height: 150px;
+    overflow-y: auto;
 }
 .select-hide {
   display: none;
@@ -186,12 +201,12 @@ opacity: 1;
   background-color: #F6F6F6;
 }
 
-input#arrival-date,
+input#room-custom-date,
 label {
   display: block;
   outline: none;
 }
-.arrival-date {
+.room-custom-date {
   position: relative;
   margin-bottom: 32px;
 }
@@ -200,7 +215,7 @@ label {
   height: 100%;
   margin: 8px 0 0 0;
 }
-input#arrival-date {
+input#aroom-custom-date {
   width: 100%;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -213,7 +228,7 @@ input#arrival-date {
   padding: 0 0 18px 0;
   cursor: pointer;
 }
-input#arrival-date::placeholder {
+input#room-custom-date::placeholder {
   position: absolute;
   top: 0;
   left: 0;
@@ -224,7 +239,7 @@ input#arrival-date::placeholder {
   color: #F7F7F7;
   opacity: 1;
 }
-input#arrival-date:focus::placeholder {
+input#room-custom-date:focus::placeholder {
   opacity: 0;
 }
 .datepicker-panel {
@@ -236,12 +251,7 @@ input.calendar {
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
-.mod-room-btn {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 130px;
-  padding-right: 130px;
-}
+
 .mod-room-btn {
   display: flex;
   justify-content: center;

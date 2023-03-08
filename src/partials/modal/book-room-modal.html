@@ -1,6 +1,6 @@
 <!-- modal book a room -->
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
       <div class="modal-room">
          <button class="close-modal-book" type="button" data-modal-close>
             <svg class="close" width="28" height="28">
@@ -16,7 +16,7 @@
                 </label>
             </div>
 
-            <div class="form-field-book">
+            <div class="form-field-book form-field-tel">
                 <label class="form-label-book">
                     <input class="form-input-book" type="tel" name="user_phone" placeholder="+38 ()"
                   id="phone"
@@ -24,14 +24,13 @@
                 </label>
             </div>
 
-            <div class="form-field-book">
+            <div class="form-field-book room-custom-date">
                 <input
-                  id="arrival-date"
+                  id="custom-input-date"
                   class="calendar"
                   type="text"
                   name="upload-date"
                   placeholder="today"
-                  ,
                   autocomplete="off"
                 />
                 <svg class="select-icon" width="12" height="8">
@@ -72,6 +71,16 @@
                 <svg class="select-icon" width="12" height="8">
                   <use href="./images/icons.svg#select"></use>
                 </svg>
+                <div class="select-items select-hide">
+                  <div>Double suite</div>
+                  <div>Double junior suite</div>
+                  <div>double standard</div>
+                  <div>double economy</div>
+                  <div>triple suite</div>
+                  <div>triple junior suite</div>
+                  <div>triple standard</div>
+                  <div>triple economy</div>
+                </div>
                 <label class="form-label-book"
                   >Number category</label>
               </div>
