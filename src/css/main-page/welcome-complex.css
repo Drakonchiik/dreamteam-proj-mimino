@@ -78,13 +78,28 @@
   text-transform: uppercase;
 }
 
+
+
 .welcome-text-first {
-  width: 306px;
+  width: 280px;
+}
+
+@media screen and (min-width: 375px){
+  .welcome-text-first {
+    width: 306px;
+  }
 }
 
 .welcome-text-second {
-  width: 335px;
+  width: 280px;
 }
+
+@media screen and (min-width: 375px){
+  .welcome-text-second {
+    width: 335px;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .welcome-text-second {
