@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/src/css/hotel-page/hotel-stiles.css" />
+    <link rel="stylesheet" href="./css/hotel-page/hotel-stiles.css" />
     <title>Document</title>
   </head>
   <body>
     <main class="background">
-      <section class="sect-one-disp">
+      <section class="sect-one-disp container">
         <div class="sect-one-div-disp">
           <div>
             <h1 class="sect-one-h">hotel</h1>
@@ -29,44 +29,60 @@
             a romantic dinner, our menu has something for everyone.
           </p>
         </div>
-        <ul class="sect-one-img">
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect1/image.webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect1/image-tablet.webp"
-              />
+        <div>
+          <ul class="sect-one-img">
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/hotel-img/sect1/image.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/hotel-img/sect1/image-tablet.webp"
+                />
 
+                <img
+                  class="img-one-mobile1"
+                  src="./img/hotel-img/sect1/image-mobile.webp"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/hotel-img/sect1/image1.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/hotel-img/sect1/image1-tablet.webp"
+                />
+
+                <img
+                  class="img-one-mobile2"
+                  src="./img/hotel-img/sect1/image1-mobile.webp"
+                  alt=""
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="sect-one-svg-disp">
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile1"
-                src="/src/img/hotel-img/sect1/image-mobile.webp"
+                src="http://localhost:5173/img/rest-hero/arrow1.svg"
                 alt=""
               />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect1/image1.webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect1/image1-tablet.webp"
-              />
-
+            </button>
+            <button class="sect-one-svg">
               <img
-                class="img-one-mobile2"
-                src="/src/img/hotel-img/sect1/image1-mobile.webp"
+                src="http://localhost:5173/img/rest-hero/arrow2.svg"
                 alt=""
               />
-            </picture>
-          </li>
-        </ul>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="sect-two">
         <ul class="sect-two-img">
@@ -74,15 +90,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect2/img.webp"
+                srcset="./img/hotel-img/sect2/img.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect2/img-tablet.webp"
+                srcset="./img/hotel-img/sect2/img-tablet.webp"
               />
               <img
                 class="img-two-mobile1"
-                src="/src/img/hotel-img/sect2/img-mobile.webp"
+                src="./img/hotel-img/sect2/img-mobile.webp"
                 alt=""
                 width="386px"
                 height="396px"
@@ -93,16 +109,16 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect2/img1.webp"
+                srcset="./img/hotel-img/sect2/img1.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect2/img1-tablet.webp"
+                srcset="./img/hotel-img/sect2/img1-tablet.webp"
               />
 
               <img
                 class="img-two-mobile2"
-                src="/src/img/hotel-img/sect2/img1-mobile.webp"
+                src="./img/hotel-img/sect2/img1-mobile.webp"
                 alt=""
                 width="540px"
                 height="762px"
@@ -113,15 +129,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect2/img2.webp"
+                srcset="./img/hotel-img/sect2/img2.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect2/img2-tablet.webp"
+                srcset="./img/hotel-img/sect2/img2-tablet.webp"
               />
               <img
                 class="img-two-mobile3"
-                src="/src/img/hotel-img/sect2/img2-mobile.webp"
+                src="./img/hotel-img/sect2/img2-mobile.webp"
                 alt=""
                 width="386px"
                 height="510px"
@@ -146,7 +162,9 @@
             </div>
           </div>
           <ul class="sect-two-butt-disp">
-            <li><button class="sect-two-butt" href="">More details</button></li>
+            <li class="sect-two-a-li">
+              <a class="sect-two-a" href="./room-page.html">More details</a>
+            </li>
             <li><button class="sect-two-butt" href="">View prices</button></li>
           </ul>
         </div>
@@ -157,15 +175,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect3/img.webp"
+                srcset="./img/hotel-img/sect3/img.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect3/img-tablet.webp"
+                srcset="./img/hotel-img/sect3/img-tablet.webp"
               />
               <img
                 class="img-tree-mobile1"
-                src="/src/img/hotel-img/sect3/img-mobile.webp"
+                src="./img/hotel-img/sect3/img-mobile.webp"
                 alt=""
                 width="386px"
                 height="395px"
@@ -176,15 +194,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect3/img1.webp"
+                srcset="./img/hotel-img/sect3/img1.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect3/img1-tablet.webp"
+                srcset="./img/hotel-img/sect3/img1-tablet.webp"
               />
               <img
                 class="img-tree-mobile2"
-                src="/src/img/hotel-img/sect3/img1-mobile.webp"
+                src="./img/hotel-img/sect3/img1-mobile.webp"
                 alt=""
                 width="539px"
                 height="762px"
@@ -195,15 +213,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect3/img2.webp"
+                srcset="./img/hotel-img/sect3/img2.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect3/img2-tablet.webp"
+                srcset="./img/hotel-img/sect3/img2-tablet.webp"
               />
               <img
                 class="img-tree-mobile3"
-                src="/src/img/hotel-img/sect3/img2-mobile.webp"
+                src="./img/hotel-img/sect3/img2-mobile.webp"
                 alt=""
                 width="386px"
                 height="510px"
@@ -227,8 +245,8 @@
             </div>
           </div>
           <ul class="sect-tree-butt-disp">
-            <li>
-              <button class="sect-tree-butt" href="">More details</button>
+            <li class="sect-tree-a-li">
+              <a class="sect-tree-a" href="./room-page.html">More details</a>
             </li>
             <li><button class="sect-tree-butt" href="">View prices</button></li>
           </ul>
@@ -240,15 +258,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect4/img.webp"
+                srcset="./img/hotel-img/sect4/img.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect4/img-tablet.webp"
+                srcset="./img/hotel-img/sect4/img-tablet.webp"
               />
               <img
                 class="img-four-mobile1"
-                src="/src/img/hotel-img/sect4/img-mobile.webp"
+                src="./img/hotel-img/sect4/img-mobile.webp"
                 alt=""
                 width="386px"
                 height="396px"
@@ -259,15 +277,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect4/img1.webp"
+                srcset="./img/hotel-img/sect4/img1.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect4/img1-tablet.webp"
+                srcset="./img/hotel-img/sect4/img1-tablet.webp"
               />
               <img
                 class="img-four-mobile2"
-                src="/src/img/hotel-img/sect4/img1-mobile.webp"
+                src="./img/hotel-img/sect4/img1-mobile.webp"
                 alt=""
                 width="540px"
                 height="762px"
@@ -278,15 +296,15 @@
             <picture>
               <source
                 media="(min-width: 1440px)"
-                srcset="/src/img/hotel-img/sect4/img2.webp"
+                srcset="./img/hotel-img/sect4/img2.webp"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="/src/img/hotel-img/sect4/img2-tablet.webp"
+                srcset="./img/hotel-img/sect4/img2-tablet.webp"
               />
               <img
                 class="img-four-mobile3"
-                src="/src/img/hotel-img/sect4/img2-mobile.webp"
+                src="./img/hotel-img/sect4/img2-mobile.webp"
                 alt=""
                 width="386px"
                 height="510px"
@@ -307,8 +325,8 @@
             </p>
           </div>
           <ul class="sect-four-butt-disp">
-            <li>
-              <button class="sect-four-butt" href="">More details</button>
+            <li class="sect-four-a-li">
+              <a class="sect-four-a" href="./room-page.html">More details</a>
             </li>
             <li><button class="sect-four-butt" href="">View prices</button></li>
           </ul>

@@ -71,6 +71,7 @@ screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(../../img/home-hero/mob-bg@2x.jpg);
+        background-size: 335px;
     }
 }
 
@@ -85,6 +86,7 @@ screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
         background-image: url(../../img/home-hero/tab-bg@2x.jpg);
+        background-size: 542px;
     }
 }
 
@@ -158,8 +160,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1440px) {
         background-color: transparent;
     }
     .hero {
+        top: -80px;
+        position: relative;
+        background-size: 40% 100%;
         background-position-x: 100%;
         background-position-y: 0px;
+               
     }
     .hero-title {
         padding-top: 274px;
