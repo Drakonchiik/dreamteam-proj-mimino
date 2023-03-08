@@ -1,24 +1,27 @@
-/* modal */
+/* modal 2 */
 
-/* .backdrop {
+.overlay {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.5);
+  background-color: #00000080;
+  z-index: 20;
+  transition: .3s all;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-} */
+.modal.active, .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 .modal {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   padding: 24px 24px 40px 24px;
@@ -354,22 +357,4 @@ input.calendar {
 .mod-tab-btn:focus {
   color: #121212;
   background-color: #f7f7f7;
-}
-
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00000080;
-  z-index: 20;
-  transition: .3s all;
-}
-
-.modal.active, .overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
