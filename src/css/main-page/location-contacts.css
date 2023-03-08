@@ -59,8 +59,6 @@
 }
 
 .location-map {
-    width: 335px;
-    height: 384px;
     box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
 
@@ -71,19 +69,9 @@
         justify-content: space-between;
         align-items: center;
     }
-
-    .location-map {
-        width: 704px;
-        height: 576px;
-    }
 }
 
 @media screen and (min-width:1440px) {
-    .location-map {
-        width: 640px;
-        height: 524px;
-    }
-
     .img-loc {
         display: flex;
         align-items: flex-end;
