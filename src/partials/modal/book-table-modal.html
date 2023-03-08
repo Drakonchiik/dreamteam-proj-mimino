@@ -1,0 +1,78 @@
+<!-- modal book a table -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="close-btn-thumb">
+      <button class="modal-button-close" type="button" data-modal-close>
+        <svg class="btn-bodal-close" width="28" height="28">
+          <use href="./img/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <h1 class="table-modal-title">
+      BOOK <span class="table-modal-title-acсent">A TABLE</span>
+    </h1>
+    <form class="modal-form" name="modal-form">
+      <div class="table-form-group">
+        <label class="table-form-field table-form-item" for="">
+          <input
+            class="table-form-input"
+            type="text"
+            name="user_name"
+            placeholder="Your name"
+            required
+          />
+          <span class="table-form-label">Who should book a table for?</span>
+        </label>
+        <div class="table-custom-select table-form-item">
+          <select>
+            <option value="0" selected>number of people</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <svg class="select-icon" width="20" height="20">
+            <use href="./img/icons.svg#select"></use>
+          </svg>
+        </div>
+        <div class="table-custom-date table-form-item">
+          <input
+            id="custom-input-date"
+            class="calendar"
+            type="text"
+            name="upload-release"
+            placeholder="today"
+            ,
+            autocomplete="off"
+          />
+          <svg class="select-icon" width="20" height="20">
+            <use href="./img/icons.svg#select"></use>
+          </svg>
+          <label class="table-form-field table-label-date"
+            >What date to book?</label
+          >
+        </div>
+        <label class="table-form-field table-form-tel table-form-item">
+          <input
+            class="table-form-input"
+            type="tel"
+            name="user_phone"
+            placeholder="+38 ()"
+            id="phone"
+            required
+          />
+          <span class="table-form-label">phone number</span>
+        </label>
+        <button class="mod-tab-btn" type="submit">MAKE A RESERVATION</button>
+      </div>
+    </form>
+  </div>
+</div>
