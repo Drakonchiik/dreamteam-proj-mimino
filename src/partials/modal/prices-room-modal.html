@@ -15,39 +15,45 @@
     <h2 class="price-modal-text">Double suite</h2>
     <form class="modal-form" name="modal-form">
       <div class="price-form-group">
-        <div class="price-custom-select price-form-item">
-          <select>
-            <option value="0" selected>Number of nights</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-          <svg class="select-icon" width="20" height="20">
-            <use href="./img/icons.svg#select"></use>
-          </svg>
+        <div class="price-item-wrap">
+          <div class="price-wrap-select price-form-item">
+            <div class="price-custom-select">
+              <select>
+                <option value="1 selected">1</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <svg class="select-icon" width="20" height="20">
+                <use href="./img/icons.svg#select"></use>
+              </svg>
+            </div>
+            <label class="price-form-field">Number of nights</label>
+          </div>
+          <label class="price-form-field price-form-item">
+            <input
+              class="price-form-input"
+              type="number"
+              name="price"
+              placeholder="1000"
+              id=""
+              required
+            />
+            <span class="price-form-label">UAH</span>
+          </label>
         </div>
-
-        <label class="price-form-field table-form-tel price-form-item">
-          <input
-            class="price-form-input"
-            type="number"
-            name="price"
-            placeholder="1000"
-            id=""
-            required
-          />
-          <span class="price-form-label">UAH</span>
-        </label>
         <button class="mod-price-btn" type="submit">MAKE A RESERVATION</button>
       </div>
     </form>
   </div>
 </div>
+
+<script src="./js/custom-select-price.js"></script>
