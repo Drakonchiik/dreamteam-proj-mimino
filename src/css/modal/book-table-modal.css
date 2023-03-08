@@ -1,0 +1,357 @@
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.5);
+  /* transition: opacity var(--anim-fast), visibility var(--anim-fast); */
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* transition-delay: var(--anim-fast); */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 24px 24px 40px 24px;
+  /* z-index: 10; */
+  transform: translateX(-50%) translateY(-50%);
+  width: 335px;
+  min-height: 528px;
+  background-color: #121212;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* transition: transform var(--anim-fast), opacity var(--anim-fast); */
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 32px 32px 60px 32px;
+    width: 628px;
+    min-height: 476px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translateX(-50%) translateY(0%);
+  opacity: 0;
+}
+
+.modal-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.17px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-button-close {
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* modal-form */
+
+.table-modal-title {
+  display: block;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  letter-spacing: -0.02em;
+  color: #f6f6f6;
+}
+
+@media screen and (min-width: 768px) {
+  .table-modal-title {
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 60px;
+  }
+}
+
+.table-modal-title-acсent {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .table-form-group {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+    flex-basis: calc((100% - (32px * 1)) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .table-form-item {
+    width: 266px;
+    flex-basis: calc((100% - (32px * 1)) / 2);
+  }
+}
+
+.table-form-input {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 8px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+  outline: transparent;
+  padding: 0 0 18px 0;
+}
+
+.table-form-input::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  opacity: 1;
+}
+
+.table-form-input:focus::placeholder {
+  opacity: 0;
+}
+
+.table-form-field {
+  display: block;
+  font-family: DM Sans;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #d8d7d7;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .table-form-field {
+    margin-bottom: 0;
+  }
+}
+
+/* table-custom-select */
+
+.table-custom-select {
+  position: relative;
+  margin-bottom: 32px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+@media screen and (min-width: 768px) {
+  .table-custom-select {
+    margin-bottom: 0;
+  }
+}
+
+.table-custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+.select-icon {
+  position: absolute;
+  right: 5px;
+  top: 7.5px;
+  z-index: -1;
+}
+
+.select-items div,
+.select-selected {
+  border: none;
+  padding: 5px 16px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-selected {
+  padding: 0 0 18px;
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+}
+
+.select-items {
+  position: absolute;
+  background-color: #121212;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div {
+  border: 1px solid #f6f6f6;
+  background-color: #ccc;
+  color: #121212;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #f6f6f6;
+}
+
+/* table-custom-date */
+
+input#custom-input-date,
+label {
+  display: block;
+  outline: none;
+}
+
+.table-custom-date {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .table-custom-date {
+    margin-bottom: 0;
+  }
+}
+
+.table-label-date {
+  height: 100%;
+  margin: 8px 0 0 0;
+}
+
+input#custom-input-date {
+  width: 100%;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid rgba(246, 246, 246, 0.2);
+  outline: none;
+  padding: 0 0 18px 0;
+  cursor: pointer;
+}
+
+input#custom-input-date::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  opacity: 1;
+}
+
+input#custom-input-date:focus::placeholder {
+  opacity: 0;
+}
+.datepicker-panel {
+  left: 50px;
+  color: #121212;
+}
+
+input.calendar {
+  background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.table-form-tel {
+  margin: 0;
+}
+
+/* mod-tab-reserv */
+
+.mod-tab-btn {
+  display: flex;
+  justify-content: center;
+  color: #f7f7f7;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background-color: #121212;
+  padding: 8px 18px;
+  margin: 40px auto 0;
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .mod-tab-btn {
+    width: 399px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mod-tab-btn {
+    width: 444px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.mod-tab-btn:hover,
+.mod-tab-btn:focus {
+  color: #121212;
+  background-color: #f7f7f7;
+}
