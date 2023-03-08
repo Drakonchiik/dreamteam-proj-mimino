@@ -184,6 +184,11 @@
     .business-block2-descr {
         width: 263px;
     }
+    .business-block1  .about-review {
+        position: absolute;
+        top: 303px;
+        left: -107px;
+    }
 }
 @media screen and (min-width: 1440px) {
     .about-business {
