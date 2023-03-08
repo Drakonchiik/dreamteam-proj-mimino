@@ -1,10 +1,13 @@
 .rest-section {
   background: #F7F7F7;
 }
-.rest-container.container {
-  padding: 0 20px;
-  width: 375px;
-  margin: 0 auto;
+
+@media screen and (min-width: 375px) {
+  .rest-container.container {
+    padding: 0 20px;
+    width: 375px;
+    margin: 0 auto;
+  }  
 }
 @media screen and (min-width: 768px) {
   .rest-container.container {
@@ -95,6 +98,7 @@
   stroke: #121212;
   gap: 20px;
 }
+
 .btn-details {
   display: inline-block;
   padding: 8px 18px;
@@ -104,7 +108,7 @@
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.29;
   letter-spacing: -0.02;
   background: transparent;
@@ -112,6 +116,14 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 375px) {
+  .btn-details {
+    font-size: 14px;
+  }
+   
+}
+
 .details-activities-container {
   display: flex;
   margin: 0 auto;
