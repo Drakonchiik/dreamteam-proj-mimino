@@ -93,11 +93,19 @@
     color: #f7f7f7;
   }
   .sect-one-svg {
-    width: 36px;
-    height: 36px;
     display: inline-block;
     background: transparent;
     border: none;
+    fill: transparent;
+    stroke: #121212;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: stroke;
+  }
+
+  .sect-one-svg:hover {
+    outline: none;
+    stroke: rgba(18, 18, 18, 0.3);
   }
 
   .sect-one-svg-disp {
@@ -198,11 +206,19 @@
     color: #f7f7f7;
   }
   .sect-one-svg {
-    width: 36px;
-    height: 36px;
     display: inline-block;
     background: transparent;
     border: none;
+    fill: transparent;
+    stroke: #121212;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: stroke;
+  }
+
+  .sect-one-svg:hover {
+    outline: none;
+    stroke: rgba(18, 18, 18, 0.3);
   }
 
   .sect-one-svg-disp {
@@ -293,11 +309,19 @@
     color: #f7f7f7;
   }
   .sect-one-svg {
-    width: 36px;
-    height: 36px;
     display: inline-block;
     background: transparent;
     border: none;
+    fill: transparent;
+    stroke: #121212;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: stroke;
+  }
+
+  .sect-one-svg:hover {
+    outline: none;
+    stroke: rgba(18, 18, 18, 0.3);
   }
 
   .sect-one-svg-disp {

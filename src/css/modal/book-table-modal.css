@@ -69,20 +69,18 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  width: 28px;
-  height: 28px;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  fill: #121212;
+  stroke: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) {
   .modal-button-close {
     top: 24px;
     right: 24px;
-    width: 32px;
-    height: 32px;
   }
 }
 
@@ -217,6 +215,8 @@
   right: 5px;
   top: 7.5px;
   z-index: -1;
+  fill: #121212;
+  stroke: #ffffff;
 }
 
 .select-items div,

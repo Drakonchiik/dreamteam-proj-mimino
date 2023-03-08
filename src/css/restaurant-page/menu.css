@@ -1,6 +1,6 @@
 /* ------------ Restaurant Menu Mobile--------------- */
 
-.menu-container.container {
+.rest-menu-container.container {
     padding-top: 40px;
     padding-bottom: 64px;
     background-color: #121212;
@@ -192,7 +192,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .menu-container.container {
+    .rest-menu-container.container {
         padding-top: 80px;
         padding-bottom: 80px;
         padding-left: 95px;
@@ -280,7 +280,7 @@
 /* ------------ Restaurant Menu Desktop --------------- */
 
 @media screen and (min-width: 1440px) {
-    .menu-container.container {
+    .rest-menu-container.container {
         padding-top: 100px;
         padding-bottom: 100px;
         padding-left: 168px;
