@@ -13,6 +13,7 @@
 @import url('./hotel-page/hotel-stiles.css');
 @import url('./room-page/room-stiles.css');
 @import url('./footer.css');
+@import url('./modal/book-table-modal.css');
 
 
 /* FONTS */
@@ -80,7 +81,7 @@ body {
 
 /* 375px <= phone screen <= infinity */
 .container {
-  max-width: 375px;
+  max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;

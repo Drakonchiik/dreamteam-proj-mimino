@@ -7,11 +7,25 @@
     font-weight: 400;
     line-height: 80px;
     text-transform: uppercase;
+    letter-spacing: -0.08em;
+
+    text-align: center;
+    padding-top: 429px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 375px){
+  .hero-title {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    text-transform: uppercase;
     letter-spacing: -0.02em;
 
     text-align: center;
     padding-top: 429px;
     margin-bottom: 24px;
+} 
 }
 
 .hero-btn-wrap {
@@ -62,7 +76,7 @@
     background-image: url(../../img/home-hero/mob-bg.jpg);
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-position-y: 43px;
+    background-position-y: 40px;
 
 }
 
@@ -71,13 +85,14 @@ screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(../../img/home-hero/mob-bg@2x.jpg);
-        background-size: 335px;
+        background-size: 89% 54%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero {
         background-image: url(../../img/home-hero/tab-bg.jpg);
+        background-position-y: 50px;
     }
 }
 
@@ -86,7 +101,7 @@ screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
         background-image: url(../../img/home-hero/tab-bg@2x.jpg);
-        background-size: 542px;
+        background-size: 74% 75%;
     }
 }
 
