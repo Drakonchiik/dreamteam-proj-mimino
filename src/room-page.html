@@ -29,72 +29,101 @@
     <!--Main-->
     <main>
       <section class="room-hero-section">
-          <div class="room-hero-container container">
-              <div class="title-btn-wrapper">
-                <h1 class="room-hero-title">Double <span class="room-accent-title">Luxury</span> Room</h1>
-                <button class="room-price-btn" type="button">view prices</button>
-              </div>
-              <div class="room-hero-picture">
-                  <picture>
-                      <source media="(min-width: 1440px)"
-                          srcset="./img/room-page/desctop/hero/d-bedroom@1x.webp 1x,
-                              ./img/room-page/desctop/hero/d-bedroom@2x.webp 2x"
-                          type="image/webp"
-                      >
-                      <source media="(min-width: 768px)"
-                          srcset="./img/room-page/tablet/hero/t-bedroom@1x.webp 1x,
-                              ./img/room-page/tablet/hero/t-bedroom@2x.webp 2x"
-                          type="image/webp"
-                      >
-                      <source media="(max-width: 767.99px)"
-                          srcset="./img/room-page/mobile/hero/m-bedroom@1x.webp 1x,
-                              ./img/room-page/mobile/hero/m-bedroom@2x.webp 2x"
-                          type="image/webp"
-                      >
-                      <img class="img-room-hero"
-                          src="./img/room-page/mobile/hero/m-bedroom@1x.webp"
-                          alt="bathroom"
-                      >
-                  </picture>
-                  <picture>
-                    <source media="(min-width: 1440px)"
-                      srcset="./img/room-page/desctop/hero/436d-kitchen@1x.webp 1x,
-                        ./img/room-page/desctop/hero/436d-kitchen@2x.webp 2x"
-                        type="image/webp"
-                      >
-                    <source media="(min-width: 768px)"
-                      srcset="./img/room-page/tablet/hero/436t-kitchen@1x.webp 1x,
-                        ./img/room-page/tablet/hero/436t-kitchen@2x.webp 2x"
-                        type="image/webp"
-                    >
-                    <source media="(max-width: 767.99px)"
-                      srcset="./img/room-page/mobile/hero/250m-kitchen@1x.webp 1x,
-                        ./img/room-page/mobile/hero/250m-kitchen@2x.webp 2x"
-                      type="image/webp"
-                    >
-                    <img
-                      src="./img/room-page/mobile/hero/250m-kitchen@1x.webp"
-                      alt="kitchen"
-                     >
-                  </picture>
-              </div>
-              <div class="room-scroll-text">
-                  <div class="room-scroll-wrapper">
-                    <button class="room-scroll-btn">
-                      <svg class="room-scroll-icon" width="36" height="36">
-                        <use href="./img/icons.svg#icon-left"></use>
-                      </svg>
-                    </button>
-                    <button class="room-scroll-btn">
-                      <svg class="room-scroll-icon" width="36" height="36">
-                        <use href="./img/icons.svg#icon-right"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <p class="room-hero-text">The Mimino hotel features spacious and stylish double luxury rooms with modern amenities for a comfortable stay.</p>
-              </div>
+        <div class="room-hero-container container">
+          <div class="title-btn-wrapper">
+            <h1 class="room-hero-title">
+              Double <span class="room-accent-title">Luxury</span> Room
+            </h1>
+            <button
+              class="room-price-btn js-open-modal"
+              type="button"
+              data-modal="1"
+            >
+              view prices
+            </button>
           </div>
-        
+          <div class="room-hero-picture">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/room-page/desctop/hero/d-bedroom@1x.webp 1x,
+                  ./img/room-page/desctop/hero/d-bedroom@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/room-page/tablet/hero/t-bedroom@1x.webp 1x,
+                  ./img/room-page/tablet/hero/t-bedroom@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767.99px)"
+                srcset="
+                  ./img/room-page/mobile/hero/m-bedroom@1x.webp 1x,
+                  ./img/room-page/mobile/hero/m-bedroom@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="img-room-hero"
+                src="./img/room-page/mobile/hero/m-bedroom@1x.webp"
+                alt="bathroom"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/room-page/desctop/hero/436d-kitchen@1x.webp 1x,
+                  ./img/room-page/desctop/hero/436d-kitchen@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/room-page/tablet/hero/436t-kitchen@1x.webp 1x,
+                  ./img/room-page/tablet/hero/436t-kitchen@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767.99px)"
+                srcset="
+                  ./img/room-page/mobile/hero/250m-kitchen@1x.webp 1x,
+                  ./img/room-page/mobile/hero/250m-kitchen@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./img/room-page/mobile/hero/250m-kitchen@1x.webp"
+                alt="kitchen"
+              />
+            </picture>
+          </div>
+          <div class="room-scroll-text">
+            <div class="room-scroll-wrapper">
+              <button class="room-scroll-btn">
+                <svg class="room-scroll-icon" width="36" height="36">
+                  <use href="./img/icons.svg#icon-left"></use>
+                </svg>
+              </button>
+              <button class="room-scroll-btn">
+                <svg class="room-scroll-icon" width="36" height="36">
+                  <use href="./img/icons.svg#icon-right"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="room-hero-text">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+          </div>
+        </div>
       </section>
       <section class="amenities-section section">
         <div class="container">
@@ -211,7 +240,8 @@
                 "
                 type="image/webp"
               />
-              <img class="bathroom-4"
+              <img
+                class="bathroom-4"
                 src="./img/room-page/mobile/amenities/m-bathroom4@1x.webp"
                 alt="bathroom-4"
               />
@@ -242,21 +272,25 @@
                   "
                   type="image/webp"
                 />
-                <img class="bathroom-5"
+                <img
+                  class="bathroom-5"
                   src="./img/room-page/mobile/amenities/m-bathroom5@1x.webp"
                   alt="bathroom-5"
                 />
               </picture>
             </div>
-              <button class="amenities-btn" type="button">book a room</button>
-            </div>
+            <button class="amenities-btn" type="button">book a room</button>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
     <!-- load footer -->
     <load src="partials/footer.html" />
 
+
     
+    <load src="partials/modal/prices-room-modal.html" />
+
 
     <script
       defer
@@ -264,6 +298,32 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- modal -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+      integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- <script defer src="js/mobile-menu.js"></script> -->
     <script type="module" src="/main.js"></script>
   </body>

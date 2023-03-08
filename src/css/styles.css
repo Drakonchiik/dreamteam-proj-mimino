@@ -14,6 +14,7 @@
 @import url('./room-page/room-stiles.css');
 @import url('./footer.css');
 @import url('./modal/book-table-modal.css');
+@import url('./modal/prices-room-modal.css');
 
 
 /* FONTS */
@@ -81,7 +82,7 @@ body {
 
 /* 375px <= phone screen <= infinity */
 .container {
-  max-width: 100%;
+  max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
