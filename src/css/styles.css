@@ -13,7 +13,6 @@
 @import url('./hotel-page/hotel-stiles.css');
 @import url('./room-page/room-stiles.css');
 @import url('./footer.css');
-@import url('./modal/book-room-modal.css');
 @import url('./modal/book-table-modal.css');
 @import url('./modal/prices-room-modal.css');
 
@@ -120,5 +119,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
