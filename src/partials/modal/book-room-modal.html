@@ -3,7 +3,7 @@
       <div class="modal" data-modal="3">
          <button class="close-modal-book js-modal-close" type="button" data-modal-close>
             <svg class="close" width="28" height="28">
-                <use href="./images/icons.svg#icon-x"></use>
+                <use href="./img/icons.svg#icon-x"></use>
             </svg>
         </button>
         <h2 class="modal-room-title">BOOK <span class="text-accent">A room</span></h2>
@@ -32,27 +32,26 @@
                   placeholder="today"
                   autocomplete="off"
                 />
-                <svg class="select-icon" width="20" height="20">
-                  <use href="./images/icons.svg#select"></use>
+                <svg class="select-icon-room" width="20" height="20">
+                  <use href="./img/icons.svg#select"></use>
                 </svg>
                 <label class="form-label-book label-date"
                   >Check-in date</label>
               </div>
 
-            <div class="form-field-book">
+            <div class="form-field-book custom-date-out">
                 <input
-                  id="custom-input-date"
+                  id="custom-date-out"
                   class="form-input-book calendar"
                   type="text"
-                  name="release"
+                  name="upload-date"
                   placeholder="25/04/2023"
-                  ,
                   autocomplete="off"/>
-                <svg class="select-icon" width="20" height="20">
-                  <use href="./images/icons.svg#select"></use>
+                <svg class="select-icon-room" width="20" height="20">
+                  <use href="./img/icons.svg#select"></use>
                 </svg>
                 <label class="form-label-book label-date"
-                  >Check-in date</label>
+                  >Check-out date</label>
               </div>
 
 
@@ -67,8 +66,8 @@
                   <option value="triple standard">triple standard</option>
                   <option value="triple economy">triple economy</option>
                 </select>
-                <svg class="select-icon" width="20" height="20">
-                  <use href="./images/icons.svg#select"></use>
+                <svg class="select-icon-room" width="20" height="20">
+                  <use href="./img/icons.svg#select"></use>
                 </svg>
 
                 <label class="form-label-book"
@@ -115,6 +114,7 @@
       <script src="./js/custom-select.js"></script>
       <script src="./js/custom-date.js"></script>
       <script src="./js/mask-phone.js"></script>
+      <script src="./js/book-room/custom-date-out.js"></script>
 
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
