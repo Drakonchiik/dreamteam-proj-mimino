@@ -105,8 +105,16 @@
       <h1 class="hero-title">Mimino</h1>
       <div class="hero-content">
         <div class="hero-btn-wrap">
-            <button class="hero-button" type="button">book a room</button>
-            <button class="hero-button js-open-modal" type="button" data-modal="2">book  a table</button>
+          <button class="hero-button js-open-modal" type="button" data-modal="3">
+            book a room
+          </button>
+          <button
+            class="hero-button js-open-modal"
+            type="button"
+            data-modal="2"
+          >
+            book a table
+          </button>
         </div>
         <div class="hero-text-wrap">
           <p class="hero-text">
@@ -479,7 +487,7 @@
             </div>
         </div>
         <div class="button-modal">
-            <button class="hotel-btn" type="button">Book a room</button>
+            <button class="hotel-btn js-open-modal" type="button" data-modal="3">Book a room</button>
             <a class="hotel-btn" href="./restaurant.html">View room</a>
         </div>
     </div>
@@ -640,6 +648,100 @@
   </form>
 </div>
 <!-- </div> -->
+
+<div class="overlay js-overlay-modal" data-modal></div>
+
+    <!-- modal book a room -->
+
+<div class="modal" data-modal="3">
+  <button
+    class="close-modal-book js-modal-close"
+    type="button"
+    data-modal-close
+  >
+    <svg class="close" width="28" height="28">
+      <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#icon-x"></use>
+    </svg>
+  </button>
+  <h2 class="modal-room-title">BOOK <span class="text-accent">A room</span></h2>
+
+  <form class="form-modal-book" name="form-modal-book">
+    <div class="form-field-book">
+      <label class="form-label-book">
+        <input
+          class="form-input-book"
+          type="text"
+          name="user_name"
+          placeholder="Your name"
+          required
+        />Who should book a table for?
+      </label>
+    </div>
+
+    <div class="form-field-book form-field-tel">
+      <label class="form-label-book">
+        <input
+          class="form-input-book"
+          type="tel"
+          name="user_phone"
+          placeholder="+38 ()"
+          id="phone"
+          required
+        />Phone number
+      </label>
+    </div>
+
+    <div class="form-field-book room-custom-date">
+      <input
+        id="custom-input-date"
+        class="form-input-book calendar"
+        type="text"
+        name="upload-date"
+        placeholder="today"
+        autocomplete="off"
+      />
+      <svg class="select-icon-room" width="20" height="20">
+        <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
+      </svg>
+      <label class="form-label-book label-date">Check-in date</label>
+    </div>
+
+    <div class="form-field-book custom-date-out">
+      <input
+        id="custom-date-out"
+        class="form-input-book calendar"
+        type="text"
+        name="upload-date"
+        placeholder="25/04/2023"
+        autocomplete="off"
+      />
+      <svg class="select-icon-room" width="20" height="20">
+        <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
+      </svg>
+      <label class="form-label-book label-date">Check-out date</label>
+    </div>
+
+    <div class="room-custom-select form-field-book">
+      <select class="select-room">
+        <option value="Double suite" selected>Double suite</option>
+        <option value="Double junior suite">Double junior suite</option>
+        <option value="double standard">double standard</option>
+        <option value="double economy">double economy</option>
+        <option value="triple suite">triple suite</option>
+        <option value="triple junior suite">triple junior suite</option>
+        <option value="triple standard">triple standard</option>
+        <option value="triple economy">triple economy</option>
+      </select>
+      <svg class="select-icon-room" width="20" height="20">
+        <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
+      </svg>
+
+      <label class="form-label-book">Number category</label>
+    </div>
+
+    <button class="mod-room-btn" type="submit">MAKE A RESERVATION</button>
+  </form>
+</div>
 
 <div class="overlay js-overlay-modal" data-modal></div>
 
