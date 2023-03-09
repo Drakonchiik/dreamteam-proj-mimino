@@ -110,6 +110,10 @@
   color: #f7f7f7;
 }
 
+.btn-activities:active {
+  
+}
+
 /* ---slider----------------- */
 .slider {
   display: flex;
