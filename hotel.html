@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/dreamteam-proj-mimino/assets/swiper-7d33bef0.js"></script>
-    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/styles-15213287.css">
+    <link rel="stylesheet" href="/dreamteam-proj-mimino/assets/swiper-0eb6fb6b.css">
   </head>
   <body>
     <!-- load header -->
@@ -106,7 +106,7 @@
         <h1 class="sect-one-h">hotel</h1>
         <ul class="sect-one-butt-disp">
           <li>
-            <button class="sect-one-butt js-open-modal" type="button" data-modal="3">book a room</button>
+            <button class="sect-one-butt" href="">book a room</button>
           </li>
           <li>
             <button class="sect-one-butt js-open-modal" type="button" data-modal="1">View prices</button>
@@ -462,129 +462,6 @@
     </div>
 </footer>
 
-    <!-- modal book a room -->
-
-      <div class="modal" data-modal="3">
-         <button class="close-modal-book js-modal-close" type="button" data-modal-close>
-            <svg class="close" width="28" height="28">
-                <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#icon-x"></use>
-            </svg>
-        </button>
-        <h2 class="modal-room-title">BOOK <span class="text-accent">A room</span></h2>
-
-        <form class="form-modal-book" name="form-modal-book">
-            <div class="form-field-book">
-                <label class="form-label-book">
-                    <input class="form-input-book" type="text" name="user_name" placeholder="Your name" required>Who should book a table for?
-                </label>
-            </div>
-
-            <div class="form-field-book form-field-tel">
-                <label class="form-label-book">
-                    <input class="form-input-book" type="tel" name="user_phone" placeholder="+38 ()"
-                  id="phone"
-                  required>Phone number
-                </label>
-            </div>
-
-            <div class="form-field-book room-custom-date">
-                <input
-                  id="custom-input-date"
-                  class="form-input-book calendar"
-                  type="text"
-                  name="upload-date"
-                  placeholder="today"
-                  autocomplete="off"
-                />
-                <svg class="select-icon-room" width="20" height="20">
-                  <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
-                </svg>
-                <label class="form-label-book label-date"
-                  >Check-in date</label>
-              </div>
-
-            <div class="form-field-book custom-date-out">
-                <input
-                  id="custom-date-out"
-                  class="form-input-book calendar"
-                  type="text"
-                  name="upload-date"
-                  placeholder="25/04/2023"
-                  autocomplete="off"/>
-                <svg class="select-icon-room" width="20" height="20">
-                  <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
-                </svg>
-                <label class="form-label-book label-date"
-                  >Check-out date</label>
-              </div>
-
-
-              <div class="room-custom-select form-field-book">
-                <select class="select-room">
-                  <option value="Double suite" selected>Double suite</option>
-                  <option value="Double junior suite">Double junior suite</option>
-                  <option value="double standard">double standard</option>
-                  <option value="double economy">double economy</option>
-                  <option value="triple suite">triple suite</option>
-                  <option value="triple junior suite">triple junior suite</option>
-                  <option value="triple standard">triple standard</option>
-                  <option value="triple economy">triple economy</option>
-                </select>
-                <svg class="select-icon-room" width="20" height="20">
-                  <use href="/dreamteam-proj-mimino/assets/icons-7fac5c68.svg#select"></use>
-                </svg>
-
-                <label class="form-label-book"
-                  >Number category</label>
-              </div>
-
-        <button class="mod-room-btn" type="submit">
-                MAKE A RESERVATION
-              </button>
-
-        </form>
-      </div>
-    
-
-
-    <div class="overlay js-overlay-modal" data-modal></div>
-
-
-    <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
-        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
-
-<script src="./js/modal.js"></script>
-      <script src="./js/custom-select.js"></script>
-      <script src="./js/custom-date.js"></script>
-      <script src="./js/mask-phone.js"></script>
-      <script src="./js/book-room/custom-date-out.js"></script>
-
-<script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
-</body>
-
-</html>
     <!-- modal prices-room -->
 
 <!-- backdrop is-hidden -->
@@ -661,30 +538,6 @@
     ></script>
 
     <!-- modal -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
-      integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
