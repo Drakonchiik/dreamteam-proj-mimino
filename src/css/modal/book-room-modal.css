@@ -64,7 +64,7 @@
 }
 
 .close-modal-book {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 8.17px;
@@ -76,7 +76,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   fill: #121212;
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 
 .form-field-book {
@@ -137,8 +137,7 @@
   margin-bottom: 0;
 }
 
-* room-custom-select * 
-.room-custom-select {
+* room-custom-select * .room-custom-select {
   position: relative;
   margin-bottom: 40px;
   width: 100%;
@@ -186,7 +185,8 @@
   background-color: #121212;
   fill: #121212;
   stroke: #f7f7f7;
-  z-index: 1;}
+  z-index: 1;
+}
 
 .select-items div,
 .select-selected {
@@ -196,7 +196,7 @@
   user-select: none;
 }
 .select-selected {
-  opacity: 0;
+  opacity: 1;
   background-color: transparent;
   padding: 0 0 18px;
   border: none;
